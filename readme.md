@@ -7,10 +7,9 @@ I have a library for low quality, high quality, Animation, Movies.  Each has the
 
 - While I have ran thousands of files through this flow, please consider this beta! Do not trust it with your media library until you have ran a bunch of various files through it and understand how it operates!  Let me know if you run into unexpected behavior!
 - Do not use with DV or HDR+.  Could cause playback error.  Works fine with basic HDR (Fix for DV is on the roadmap, need help implementing it)
-- CPU & QSV need more testing, as I don't use them often.  NVENC is well tested.
-- This Flow is designed to be used with an input and output directory
+- CPU & QSV work but need more testing, as I don't use them often.  NVENC is well tested.
+- This Flow is designed to be used with an input and output directory.  Futurue versions will have a library option.
 - Uses the -vbr method to obtain a predictable bitrate.  With cq as a fallback method, or when we decide the bitrate is too low for -vbr to work well.
-- Languages not defined in the audio_language variable are removed
 
 # Features
 - Uses Library Variables for Quality Settings. This way you can have different libraries for different quality settings
