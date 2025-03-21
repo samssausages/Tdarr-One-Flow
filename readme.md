@@ -185,22 +185,33 @@ The flow is huge, but here is an example.
 
 
 ## Release Notes
+
 Changelog:
+
 V0.93
+
 BREAKING CHANGES:
+
 Split "do_audio" into:
+
 do_audio_clean - true/false - Remove Commentary Audio, Remove Languages not listed in "audio_language", Keep only the Audio Track with Highest Channel Count
+
 do_audio_encode - true/false - Encode 1st Audio track to Opus
 
+
 ACTION TO TAKE IF UPGRADING FROM OLD VERSION:
+
 Remove "do_audio" Library Variable and create "do_audio_clean" and "do_audio_encode" Library Variables
 
+
 OTHER CHANGES:
+
 - is_audio_lossless custom JS - Expanding to capture more lossless audio codecs through the custom JS, for more durable lossless codec identification. - Still refining this
 - Added optional library variable: "disable_vbr" - true/false - to disable vbr encoding method and force cq encoding. (if you have disable_cq enabled as well, then video encoding is skipped)
 - Added optional library variable: "encoder" - nvenc/qsv/amf/vaapi/cpu - Override Autodetect and manually set what encoder to use (currently only nvenc/qsv/cpu work)
 - Moved "lookahead=32" from 4 - Video to 1 - Input - Flow Variable "fl_cpu_main"
 
 BUG FIX:
+
 - Added missing error handling to audio cleaning process
 - Improved Audio encode error reporting
