@@ -97,7 +97,7 @@
       "fpEnabled": true,
       "inputsDB": {
         "variable": "fl_ffmpeg_main",
-        "value": "-max_muxing_queue_size 9999 -probesize 100M -analyzeduration 200M"
+        "value": "-max_muxing_queue_size 9999 -probesize 1000000 -analyzeduration 5000000"
       }
     },
     {
@@ -265,7 +265,7 @@
       "fpEnabled": true,
       "inputsDB": {
         "variable": "fl_cpu_main",
-        "value": ""
+        "value": "\"lookahead=32\""
       }
     },
     {
@@ -482,7 +482,7 @@
         "x": 1161.820555126866,
         "y": -1109.918908969385
       },
-      "fpEnabled": false,
+      "fpEnabled": true,
       "inputsDB": {
         "variable": "fl_nvenc_b-frames",
         "value": "-bf 4"
