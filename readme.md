@@ -83,24 +83,32 @@ bitrate_4k 10000k
 
 bitrate_4k_hdr 12500k
 
-bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL.
+do_audio_clean - true - Remove Commentary Audio, Remove Languages not listed in "audio_language", Keep only the Audio Track with Highest Channel Count
 
-bitrate_audio_cutoff 192k # will not encode source audio under this bitrate.  This is PER CHANNEL
+do_audio_encode - true - Encode 1st Audio track to Opus
 
-audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
+bitrate_audio 160k # Output audio bitrate we will encode to.  This is PER CHANNEL.
 
-do_audio true # process audio? Currently Opus
+bitrate_audio_cutoff 192k # will not encode if source audio bitrate is under this value.  This is PER CHANNEL
 
-do_hevc = false # process hevc?
-
-```
-
-# Optional Fields
+audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep, if blank it's skipped
 
 ```
-disable_cq = false # Disable Fallback encoding method
 
-disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
+# Optional Library Variable Fields
+
+```
+If not defined, the default is "false" (disabled)
+
+disable_vbr = true # Disable Primary VBR encoding Method
+
+disable_cq = true # Disable Fallback encoding method
+
+disable_video = true # Optional - Only needed if you want to disable video processing - Set to True
+
+do_hevc = true # process hevc?
+
+encoder = nvenc/qsv/amf/vaapi/cpu - Override Encoder Autodetect and manually set what encoder to use (currently only nvenc/qsv/cpu work)
 
 ```
 
@@ -165,10 +173,34 @@ Q:  Why is my video not encoding?  Why is it just copying the video?
 A:  The most common reason for this is that your desired Output Bitrate is higher (or close to) your Input bitrate.  It wouldn't make sense to encode a 4000k video to 6000k.  When we encounter this we do go to the fallback cq encoding method, but this also checks to make sure a reasonable size savings can be obtained.  You can lower the quality by raising the cq value.
 But keep in mind, it may not be worth it to encode such videos.  One-Flow probably won't encode if you only save 5% of space, the loss in quality wouldn't be worth a 5% space savings.  Keep it original, or lower the output bitrate.
 
+Q:  Why are my hevc vides not encoding?
 
+A:  By default we skip hevc, to force hevc encoding add the custom library variable: do_hevc = true
 
 ## Flow Screenshot
 The flow is huge, but here is an example.
 
 ![Video Example](https://github.com/samssausages/tdarr/blob/80ee7f3c63ab8f017eefac86c9a25f7f101f129a/video_example.png)
 ![Input Example](https://github.com/samssausages/tdarr/blob/80ee7f3c63ab8f017eefac86c9a25f7f101f129a/input_example.png)
+
+
+## Release Notes
+Changelog:
+V0.93
+BREAKING CHANGES:
+Split "do_audio" into:
+do_audio_clean - true/false - Remove Commentary Audio, Remove Languages not listed in "audio_language", Keep only the Audio Track with Highest Channel Count
+do_audio_encode - true/false - Encode 1st Audio track to Opus
+
+ACTION TO TAKE IF UPGRADING FROM OLD VERSION:
+Remove "do_audio" Library Variable and create "do_audio_clean" and "do_audio_encode" Library Variables
+
+OTHER CHANGES:
+- is_audio_lossless custom JS - Expanding to capture more lossless audio codecs through the custom JS, for more durable lossless codec identification. - Still refining this
+- Added optional library variable: "disable_vbr" - true/false - to disable vbr encoding method and force cq encoding. (if you have disable_cq enabled as well, then video encoding is skipped)
+- Added optional library variable: "encoder" - nvenc/qsv/amf/vaapi/cpu - Override Autodetect and manually set what encoder to use (currently only nvenc/qsv/cpu work)
+- Moved "lookahead=32" from 4 - Video to 1 - Input - Flow Variable "fl_cpu_main"
+
+BUG FIX:
+- Added missing error handling to audio cleaning process
+- Improved Audio encode error reporting
