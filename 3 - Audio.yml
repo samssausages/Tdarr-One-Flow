@@ -5,26 +5,98 @@
   "tags": "",
   "flowPlugins": [
     {
-      "name": "Reset Flow Error",
+      "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "ie0ITMYKV",
+      "position": {
+        "x": 1290.6037526508871,
+        "y": 1040.7987388105148
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "cpvMZJdoY"
+      }
+    },
+    {
+      "name": "ℹ️ We Check for Library Variable to see if you want to clean audio or not",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "FE2h_IOxe",
+      "position": {
+        "x": 381.806463777129,
+        "y": -119.68393880780657
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - do_audio_encode ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "pNuQrkOTp",
+      "position": {
+        "x": 266.16722527977015,
+        "y": 1228.3745196484713
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - do_audio_encode ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "wy56g34IU",
+      "position": {
+        "x": 696.8489458405908,
+        "y": -30.398348864289357
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "pNuQrkOTp"
+      }
+    },
+    {
+      "name": "Audio - Clean - Check var do_audio_clean 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "K02RcF2UK",
+      "position": {
+        "x": 578.7509768519458,
+        "y": -118.59754840194705
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.do_audio_clean}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Custom JS Calculate is_audio_lossless Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
       "id": "90XvoVKK_",
       "position": {
-        "x": 261.0723828231357,
-        "y": 1866.4017496040112
+        "x": 349.00845063224733,
+        "y": 1833.8860330375007
       },
       "fpEnabled": true
     },
     {
-      "name": "Reset Flow Error",
+      "name": "Audio - Custom JS Calculate bitrate_audio Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
       "id": "wWVvBYYaN",
       "position": {
-        "x": 269.3992705639761,
-        "y": 1775.485873129093
+        "x": 347.99889725728053,
+        "y": 1729.0236994812028
       },
       "fpEnabled": true
     },
@@ -96,7 +168,7 @@
       "id": "0022sTONL",
       "position": {
         "x": 767.4249612259721,
-        "y": 1000.0163316269699
+        "y": 918.0163316269699
       },
       "fpEnabled": true
     },
@@ -107,8 +179,8 @@
       "version": "1.0.0",
       "id": "WR1Lag2Ls",
       "position": {
-        "x": 489.8173898826561,
-        "y": 879.925258332505
+        "x": 489.817389882656,
+        "y": 797.925258332505
       },
       "fpEnabled": true
     },
@@ -119,8 +191,8 @@
       "version": "1.0.0",
       "id": "9vG4bGFyK",
       "position": {
-        "x": 213.71715344889833,
-        "y": 739.4851637590019
+        "x": 213.71715344889844,
+        "y": 657.4851637590019
       },
       "fpEnabled": true
     },
@@ -132,7 +204,7 @@
       "id": "aKqpG5jAZ",
       "position": {
         "x": 917.7794952091433,
-        "y": 999.4471642426014
+        "y": 917.4471642426014
       },
       "fpEnabled": true
     },
@@ -144,7 +216,7 @@
       "id": "JjxNJV9ga",
       "position": {
         "x": 640.7254181185895,
-        "y": 879.7115764783505
+        "y": 797.7115764783505
       },
       "fpEnabled": true
     },
@@ -155,8 +227,8 @@
       "version": "1.0.0",
       "id": "9_Y4Ql07p",
       "position": {
-        "x": 362.49842761681253,
-        "y": 739.5145243831323
+        "x": 362.4984276168125,
+        "y": 657.5145243831323
       },
       "fpEnabled": true
     },
@@ -851,7 +923,7 @@
       },
       "fpEnabled": true,
       "inputsDB": {
-        "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\n  const losslessCodecs = [\"pcm_s16le\", \"pcm_s24le\", \"pcm_f32le\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};\n"
+        "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\nconst losslessCodecs = [\"alac\", \"truehd\", \"ape\", \"wmav1\", \"wmav2\", \"flac\", \"mlp\", \"shorten\", \"pcm_alaw\", \"pcm_bluray\", \"pcm_dvd\", \"pcm_f32be\", \"pcm_f32le\", \"pcm_f64be\", \"pcm_f64le\", \"pcm_mulaw\", \"pcm_s16be\", \"pcm_s16be_planar\", \"pcm_s16le\", \"pcm_s16le_planar\", \"pcm_s24be\", \"pcm_s24daud\", \"pcm_s24le\", \"pcm_s24le_planar\", \"pcm_s32be\", \"pcm_s32le\", \"pcm_s32le_planar\", \"pcm_s64be\", \"pcm_s64le\", \"pcm_s8\", \"pcm_s8_planar\", \"pcm_u16be\", \"pcm_u16le\", \"pcm_u24be\", \"pcm_u24le\", \"pcm_u32be\", \"pcm_u32le\", \"pcm_u8\", \"pcm_vidc\", \"sonicls\", \"tta\", \"wavpack\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};\n"
       }
     },
     {
@@ -1084,7 +1156,7 @@
       "id": "zCRCLqP6s",
       "position": {
         "x": 1172.6954836251518,
-        "y": 1038.9611818086278
+        "y": 956.9611818086278
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1100,7 +1172,7 @@
       "id": "Mviaj6s0x",
       "position": {
         "x": 844.9013067968428,
-        "y": 1085.9261858364116
+        "y": 1003.9261858364116
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1116,7 +1188,7 @@
       "id": "gkx2a_GOv",
       "position": {
         "x": 562.8493527910664,
-        "y": 963.6661569414246
+        "y": 881.6661569414246
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1196,7 +1268,7 @@
       "id": "v8mlWMCB2",
       "position": {
         "x": 1547.1511236873691,
-        "y": 837.7787807812055
+        "y": 755.7787807812055
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1211,8 +1283,8 @@
       "version": "2.0.0",
       "id": "X4w8U3ohn",
       "position": {
-        "x": 455.94813187655484,
-        "y": 697.7943102523049
+        "x": 455.9481318765547,
+        "y": 615.794310252305
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1228,7 +1300,7 @@
       "id": "8-K38F9uN",
       "position": {
         "x": 729.396345829367,
-        "y": 825.6908279263514
+        "y": 743.6908279263514
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1244,7 +1316,7 @@
       "id": "U3tr8l162",
       "position": {
         "x": 1007.4179865864894,
-        "y": 952.1854115358262
+        "y": 870.1854115358262
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1260,7 +1332,7 @@
       "id": "cpvMZJdoY",
       "position": {
         "x": 1546.284934391056,
-        "y": 683.2026716094169
+        "y": 601.2026716094169
       },
       "fpEnabled": true
     },
@@ -1272,7 +1344,7 @@
       "id": "kXiy_6aLf",
       "position": {
         "x": 1174.0504696744454,
-        "y": 1196.5095309010442
+        "y": 1114.5095309010442
       },
       "fpEnabled": true
     },
@@ -1284,7 +1356,7 @@
       "id": "M_lfTMnEG",
       "position": {
         "x": 892.1249063616141,
-        "y": 906.9369996914406
+        "y": 824.9369996914406
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1300,7 +1372,7 @@
       "id": "G3A2Y8WBG",
       "position": {
         "x": 618.8549268157118,
-        "y": 779.818673736858
+        "y": 697.818673736858
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1316,7 +1388,7 @@
       "id": "nNC1PCGy8",
       "position": {
         "x": 1324.3736987613124,
-        "y": 934.4195592541437
+        "y": 852.4195592541437
       },
       "fpEnabled": true
     },
@@ -1328,7 +1400,7 @@
       "id": "Nf68BwpQv",
       "position": {
         "x": 1197.608733221955,
-        "y": 828.775319167986
+        "y": 746.775319167986
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1343,7 +1415,7 @@
       "id": "PulJXrK8M",
       "position": {
         "x": 1172.122940205876,
-        "y": 949.4529154280438
+        "y": 867.4529154280438
       },
       "fpEnabled": true
     },
@@ -1355,7 +1427,7 @@
       "id": "TUrnR8Exd",
       "position": {
         "x": 891.3669686631297,
-        "y": 824.5889375736183
+        "y": 742.5889375736183
       },
       "fpEnabled": true
     },
@@ -1367,7 +1439,7 @@
       "id": "X6KOW4tLW",
       "position": {
         "x": 619.429703983944,
-        "y": 697.1547380828795
+        "y": 615.1547380828795
       },
       "fpEnabled": true
     },
@@ -1379,7 +1451,7 @@
       "id": "E2F9SHWF0",
       "position": {
         "x": 983.6433411357103,
-        "y": 726.2672579896231
+        "y": 644.2672579896231
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1394,7 +1466,7 @@
       "id": "pM5Xc3f3q",
       "position": {
         "x": 733.0817448580892,
-        "y": 594.2466001123513
+        "y": 512.2466001123512
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1408,8 +1480,8 @@
       "version": "1.0.0",
       "id": "8XnZGqJzO",
       "position": {
-        "x": 303.97481875500335,
-        "y": 405.7488731122645
+        "x": 303.9748187550033,
+        "y": 323.7488731122646
       },
       "fpEnabled": true
     },
@@ -1421,7 +1493,7 @@
       "id": "yr9CMoKRz",
       "position": {
         "x": 633.3644334055409,
-        "y": 327.85908155310625
+        "y": 245.8590815531063
       },
       "fpEnabled": true
     },
@@ -1433,7 +1505,7 @@
       "id": "cg5tVkEY8",
       "position": {
         "x": 477.993069245618,
-        "y": 346.1789472371948
+        "y": 264.17894723719473
       },
       "fpEnabled": true
     },
@@ -1444,8 +1516,8 @@
       "version": "1.0.0",
       "id": "9ktggnxb7",
       "position": {
-        "x": 382.29839644830406,
-        "y": 220.49096059902104
+        "x": 382.2983964483042,
+        "y": 138.49096059902104
       },
       "fpEnabled": true
     },
@@ -1456,8 +1528,8 @@
       "version": "1.0.0",
       "id": "jG9agfHPW",
       "position": {
-        "x": 554.803662287587,
-        "y": 44.77505319087214
+        "x": 579.0237635475343,
+        "y": -241.13454310288878
       },
       "fpEnabled": true
     },
@@ -1468,8 +1540,8 @@
       "version": "1.0.0",
       "id": "lJ83LpCUk",
       "position": {
-        "x": 415.403622477685,
-        "y": 562.734755889674
+        "x": 415.4036224776851,
+        "y": 480.73475588967403
       },
       "fpEnabled": true
     },
@@ -1480,8 +1552,8 @@
       "version": "1.0.0",
       "id": "cUkNS-hQL",
       "position": {
-        "x": 554.009539548386,
-        "y": 116.54138990865209
+        "x": 554.0095395483859,
+        "y": 34.541389908652036
       },
       "fpEnabled": true
     },
@@ -1492,8 +1564,8 @@
       "version": "2.0.0",
       "id": "M9FxCpocJ",
       "position": {
-        "x": 552.8457929271168,
-        "y": 217.101908938507
+        "x": 552.8457929271167,
+        "y": 135.101908938507
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1509,8 +1581,8 @@
       "version": "1.0.0",
       "id": "ro6KgYaXg",
       "position": {
-        "x": 549.3325969515967,
-        "y": 459.1398702527233
+        "x": 549.3325969515968,
+        "y": 377.1398702527233
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1524,8 +1596,8 @@
       "version": "2.0.0",
       "id": "pVf0b1N0N",
       "position": {
-        "x": 291.8886464344686,
-        "y": 651.5398169249862
+        "x": 291.8886464344687,
+        "y": 569.5398169249861
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1541,12 +1613,12 @@
       "id": "1Wb2ENRYt",
       "position": {
         "x": 1546.4333919162511,
-        "y": 762.7716380925497
+        "y": 680.7716380925497
       },
       "fpEnabled": true
     },
     {
-      "name": "Audio - Clean - Check var do_audio 🔍",
+      "name": "Audio - Clean - Check var do_audio_encode 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
@@ -1557,7 +1629,7 @@
       },
       "fpEnabled": true,
       "inputsDB": {
-        "variable": "{{{args.userVariables.library.do_audio}}}",
+        "variable": "{{{args.userVariables.library.do_audio_encode}}}",
         "value": "true"
       }
     },
@@ -1583,8 +1655,8 @@
       "version": "1.0.0",
       "id": "vir0PusVB",
       "position": {
-        "x": 266.8624515985385,
-        "y": 824.35538352751
+        "x": 266.8624515985384,
+        "y": 742.35538352751
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1634,7 +1706,7 @@
       "id": "AVOGHm5kI",
       "position": {
         "x": 26.606142168926823,
-        "y": 1915.0166118086042
+        "y": 1942.5853723285331
       },
       "fpEnabled": true
     },
@@ -1752,26 +1824,19 @@
       "fpEnabled": true
     },
     {
-      "name": "Reset Flow Error",
+      "name": "Audio - Custom JS Calculate bitrate_audio_cutoff Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
       "id": "k7zliIwsW",
       "position": {
-        "x": 282.07891112129704,
-        "y": 1673.2528393313257
+        "x": 346.5213721494975,
+        "y": 1609.5077674862482
       },
       "fpEnabled": true
     }
   ],
   "flowEdges": [
-    {
-      "source": "jG9agfHPW",
-      "sourceHandle": "1",
-      "target": "cUkNS-hQL",
-      "targetHandle": null,
-      "id": "W0IccEGGC"
-    },
     {
       "source": "cUkNS-hQL",
       "sourceHandle": "1",
@@ -1946,13 +2011,6 @@
       "target": "v8mlWMCB2",
       "targetHandle": null,
       "id": "oKzZd923d"
-    },
-    {
-      "source": "kXiy_6aLf",
-      "sourceHandle": "1",
-      "target": "0SoOMHLNd",
-      "targetHandle": null,
-      "id": "knbZQStqC"
     },
     {
       "source": "0SoOMHLNd",
@@ -2830,27 +2888,6 @@
       "id": "2Fp7GwXZd"
     },
     {
-      "source": "vir0PusVB",
-      "sourceHandle": "1",
-      "target": "0SoOMHLNd",
-      "targetHandle": null,
-      "id": "fDrHtLyvA"
-    },
-    {
-      "source": "gkx2a_GOv",
-      "sourceHandle": "1",
-      "target": "0SoOMHLNd",
-      "targetHandle": null,
-      "id": "ezC4NMEth"
-    },
-    {
-      "source": "Mviaj6s0x",
-      "sourceHandle": "1",
-      "target": "0SoOMHLNd",
-      "targetHandle": null,
-      "id": "qFU8OYVqc"
-    },
-    {
       "source": "pUJx60xNJ",
       "sourceHandle": "1",
       "target": "J8tZK5YJe",
@@ -2996,6 +3033,69 @@
       "target": "AVOGHm5kI",
       "targetHandle": null,
       "id": "m5pNRtoWy"
+    },
+    {
+      "source": "jG9agfHPW",
+      "sourceHandle": "1",
+      "target": "K02RcF2UK",
+      "targetHandle": null,
+      "id": "LMmIlghLt"
+    },
+    {
+      "source": "K02RcF2UK",
+      "sourceHandle": "1",
+      "target": "cUkNS-hQL",
+      "targetHandle": null,
+      "id": "C1Q6Zl6bu"
+    },
+    {
+      "source": "pNuQrkOTp",
+      "sourceHandle": "1",
+      "target": "0SoOMHLNd",
+      "targetHandle": null,
+      "id": "rzM4dgmGJ"
+    },
+    {
+      "source": "kXiy_6aLf",
+      "sourceHandle": "1",
+      "target": "pNuQrkOTp",
+      "targetHandle": null,
+      "id": "wB3tkiLiA"
+    },
+    {
+      "source": "Mviaj6s0x",
+      "sourceHandle": "1",
+      "target": "pNuQrkOTp",
+      "targetHandle": null,
+      "id": "ZjbA54K9K"
+    },
+    {
+      "source": "gkx2a_GOv",
+      "sourceHandle": "1",
+      "target": "pNuQrkOTp",
+      "targetHandle": null,
+      "id": "JERgnKmIm"
+    },
+    {
+      "source": "vir0PusVB",
+      "sourceHandle": "1",
+      "target": "pNuQrkOTp",
+      "targetHandle": null,
+      "id": "7nzu263rE"
+    },
+    {
+      "source": "K02RcF2UK",
+      "sourceHandle": "2",
+      "target": "wy56g34IU",
+      "targetHandle": null,
+      "id": "wKAhr-6Q4"
+    },
+    {
+      "source": "zCRCLqP6s",
+      "sourceHandle": "err1",
+      "target": "ie0ITMYKV",
+      "targetHandle": null,
+      "id": "2HuTIeqvR"
     }
   ]
 }
