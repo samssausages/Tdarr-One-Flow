@@ -5,14 +5,930 @@
   "tags": "",
   "flowPlugins": [
     {
+      "name": "Video - Go to Autodetect Hardware cq ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "mYKG89mHh",
+      "position": {
+        "x": 2833.182199691531,
+        "y": 51.25059179148661
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "VamwsEncC"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 4k ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "OVpVT6LYu",
+      "position": {
+        "x": 1849.0814452747893,
+        "y": -125.86784404384422
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "papyIwsEe"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 4k_hdr ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "Q4R4k6Kob",
+      "position": {
+        "x": 1260.8118495348606,
+        "y": -110.91775621468862
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "Kp-fkWEmP"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 1440p ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "qyuFng5xG",
+      "position": {
+        "x": 665.8740639363833,
+        "y": -134.93849434852928
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "NlmEriOJi"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 480p ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "og-ICW2nq",
+      "position": {
+        "x": -1758.4294998611797,
+        "y": -90.87449998590128
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "-_UvUco4A"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 576p ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "OX-nIejxM",
+      "position": {
+        "x": -1157.4292345449642,
+        "y": -106.01301895616216
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "w3dN6Zauq"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 720p ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "RUU8swcZT",
+      "position": {
+        "x": -527.6303544650511,
+        "y": -118.87796307665744
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "qjujiEGIL"
+      }
+    },
+    {
+      "name": "Video - Go to Autodetect Hardware 1080p ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "BoWsXdPzG",
+      "position": {
+        "x": 76.40134398418519,
+        "y": -116.58574153204871
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "hjmMipWk5"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "PZo0Rq7Un",
+      "position": {
+        "x": 2776.120202648247,
+        "y": -72.45172267165051
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "dcT-aQA01",
+      "position": {
+        "x": 2683.3641973612034,
+        "y": -178.41831777155755
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "2WGDLoL10",
+      "position": {
+        "x": 2604.9490072712483,
+        "y": -280.4706992696123
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "2ZMXBmRYk",
+      "position": {
+        "x": 2529.2661560132706,
+        "y": -386.0606764360084
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "DfdYHkN-h",
+      "position": {
+        "x": 2448.217443449575,
+        "y": -487.8256869939341
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "GnGHsHIG6",
+      "position": {
+        "x": 1824.7819342232378,
+        "y": -307.9195954724038
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "B8NCjuwU_",
+      "position": {
+        "x": 1738.4725356957476,
+        "y": -412.0641680404659
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "2Od9D17mk",
+      "position": {
+        "x": 1648.2806489855689,
+        "y": -516.1521450321516
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "jTGniR-s4",
+      "position": {
+        "x": 1556.9149550504412,
+        "y": -619.9783581161447
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "pCeNNwr0f",
+      "position": {
+        "x": 1443.554378155244,
+        "y": -714.4354282960331
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "fP76QJ5mT",
+      "position": {
+        "x": 1234.445531615871,
+        "y": -285.10548484471923
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "tU9Uq6iiM",
+      "position": {
+        "x": 1141.4180057669284,
+        "y": -388.3410114768697
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "HPFVD9RSn",
+      "position": {
+        "x": 1056.2644208292202,
+        "y": -482.58368776091237
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "msU9Umzwu",
+      "position": {
+        "x": 980.4995417757384,
+        "y": -587.556680081388
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "6eZolmJ41",
+      "position": {
+        "x": 895.2865629839591,
+        "y": -697.4443652238959
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "prQ9ImHnB",
+      "position": {
+        "x": 642.5528759963098,
+        "y": -288.67833892114714
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "yEMzF4V8R",
+      "position": {
+        "x": 561.8554400080369,
+        "y": -392.35074189486033
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "-E2NVcgHu",
+      "position": {
+        "x": 474.3491022538483,
+        "y": -495.3118563496845
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "VJDakuVmY",
+      "position": {
+        "x": 380.3155939089675,
+        "y": -598.9450283914997
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "071XBKlJA",
+      "position": {
+        "x": 292.18673864227065,
+        "y": -700.444365223896
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "jiYcUez-u",
+      "position": {
+        "x": 51.55287599631009,
+        "y": -291.6783389211472
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "x_xEA_Vd8",
+      "position": {
+        "x": -33.144559991963035,
+        "y": -392.35074189486033
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "tL43A623_",
+      "position": {
+        "x": -119.65089774615154,
+        "y": -496.31185634968455
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "pFU_l9J4D",
+      "position": {
+        "x": -207.6844060910322,
+        "y": -601.9450283914997
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "nktrbv06G",
+      "position": {
+        "x": -307.8132613577291,
+        "y": -700.444365223896
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "bpWH7u3BU",
+      "position": {
+        "x": -553.9288874679795,
+        "y": -297.02305824836355
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "F3DOic_ES",
+      "position": {
+        "x": -638.3554570376441,
+        "y": -399.2670694277897
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "uC50uBfGM",
+      "position": {
+        "x": -706.0922844513599,
+        "y": -499.03275655729266
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "1U4V0YmLi",
+      "position": {
+        "x": -807.7977070170921,
+        "y": -598.2989483185495
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "B2BYltG4f",
+      "position": {
+        "x": -896.2388574539339,
+        "y": -704.5534745774144
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "U0mS3iqkP",
+      "position": {
+        "x": -1183.496471098195,
+        "y": -262.81542947114576
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "3xA7GTCEI",
+      "position": {
+        "x": -1268.00056481837,
+        "y": -370.5854220748357
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "yq1ezkZ_q",
+      "position": {
+        "x": -1347.644437946988,
+        "y": -471.9254583818373
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "TTRRz69gd",
+      "position": {
+        "x": -1442.812176657253,
+        "y": -570.501154265341
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "lHztZIs05",
+      "position": {
+        "x": -1512.2302554175067,
+        "y": -666.7579396202232
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "gs0oI5hEd",
+      "position": {
+        "x": -1784.819060775741,
+        "y": -235.1722788690082
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "25p45rk-V",
+      "position": {
+        "x": -1880.7156004731796,
+        "y": -337.48268808205523
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "Tx_nwHPgi",
+      "position": {
+        "x": -1980.6773145542816,
+        "y": -443.6796146916296
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "O9Icx0xTs",
+      "position": {
+        "x": -2061.0973131965907,
+        "y": -541.3185536903912
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "VZz-AhqVE",
+      "position": {
+        "x": -2100.6492347269213,
+        "y": -651.3597193052378
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - No encoder manually defined, attempting autodetect ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "XdXKk3kaJ",
+      "position": {
+        "x": 1855.057085032432,
+        "y": -2354.3202102235778
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ We check if encoder is overriden",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "blVXUZ_kL",
+      "position": {
+        "x": 1105.4892155634889,
+        "y": -2943.5318695459546
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Check encoder vaapi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "-osAHJecO",
+      "position": {
+        "x": 1655.9578839614865,
+        "y": -2528.4470925884243
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      }
+    },
+    {
+      "name": "Video - Check encoder amf 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "z_isysCp0",
+      "position": {
+        "x": 1517.9961698803847,
+        "y": -2630.6440191979987
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      }
+    },
+    {
+      "name": "Video - Check encoder cpu 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "TMJnfaqwH",
+      "position": {
+        "x": 1771.8544236589253,
+        "y": -2445.1366833753773
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      }
+    },
+    {
+      "name": "Video - Check encoder qsv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "32CrEuf2a",
+      "position": {
+        "x": 1416.1844967496315,
+        "y": -2748.483474562224
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      }
+    },
+    {
+      "name": "Video - Check encoder nvenc🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "2YrneglXQ",
+      "position": {
+        "x": 1313.673085272718,
+        "y": -2858.298812751461
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      }
+    },
+    {
+      "name": "Video - Hardware Check done ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "1XOB_1S0B",
+      "position": {
+        "x": 1214.7181790095203,
+        "y": -1422.5820154482626
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Go to Encode using cq ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "DPb4Nvv-V",
+      "position": {
+        "x": 1048.7105274521452,
+        "y": -1228.9436737381236
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "K_Z-TiFwk"
+      }
+    },
+    {
+      "name": "Video - Check if disable_vbr🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "7cKHQFNya",
+      "position": {
+        "x": 1192.1389519456854,
+        "y": -1324.6821028965005
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.disable_vbr}}}",
+        "value": "true"
+      }
+    },
+    {
       "name": "ℹ️ CPU Encoder",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
       "id": "UfmgSG1SF",
       "position": {
-        "x": 1903.9190434894751,
-        "y": -966.7341011056963
+        "x": 1987.6914170503444,
+        "y": -1637.1474639950454
       },
       "fpEnabled": true
     },
@@ -23,8 +939,8 @@
       "version": "1.0.0",
       "id": "FPltMUSm7",
       "position": {
-        "x": 3176.718419725448,
-        "y": -1117.9845259454496
+        "x": 2347.954283467538,
+        "y": -1109.2790203124882
       },
       "fpEnabled": true
     },
@@ -35,8 +951,8 @@
       "version": "1.0.0",
       "id": "A4dgfQZ9K",
       "position": {
-        "x": 3176.0892255153135,
-        "y": -1018.4171225748023
+        "x": 2347.3250892574038,
+        "y": -1009.711616941841
       },
       "fpEnabled": true
     },
@@ -47,8 +963,8 @@
       "version": "1.0.0",
       "id": "Mk6-aL7Tw",
       "position": {
-        "x": 1263.6263192727545,
-        "y": -2721.747149288618
+        "x": 1201.4712515706592,
+        "y": -3938.330630028691
       },
       "fpEnabled": true
     },
@@ -59,8 +975,8 @@
       "version": "2.0.0",
       "id": "JvxGMuVXd",
       "position": {
-        "x": 1264.7492625455025,
-        "y": -2632.2970712836327
+        "x": 1202.5941948434072,
+        "y": -3848.8805520237056
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -75,8 +991,8 @@
       "version": "1.0.0",
       "id": "80p25LVgi",
       "position": {
-        "x": 1446.3399259852322,
-        "y": -2809.383298747495
+        "x": 1384.184858283137,
+        "y": -4025.9667794875677
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -92,8 +1008,8 @@
       "version": "1.0.0",
       "id": "xP1tBh8Z6",
       "position": {
-        "x": 1494.7365462462078,
-        "y": -2250.4999489981933
+        "x": 1432.5814785441125,
+        "y": -3467.083429738266
       },
       "fpEnabled": true
     },
@@ -104,20 +1020,20 @@
       "version": "1.0.0",
       "id": "0uiH4oUBJ",
       "position": {
-        "x": 1399.7741396419897,
-        "y": -2539.277672050594
+        "x": 1337.6190719398944,
+        "y": -3756.6065079840664
       },
       "fpEnabled": true
     },
     {
-      "name": "Video - do_hevc ✅",
+      "name": "Video - Process hevc enabled ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
       "id": "rWuLs0j7E",
       "position": {
-        "x": 1261.728542140353,
-        "y": -2244.1077632609927
+        "x": 1199.5734744382578,
+        "y": -3460.6912440010656
       },
       "fpEnabled": true
     },
@@ -128,8 +1044,8 @@
       "version": "2.0.0",
       "id": "Muq2K7p8b",
       "position": {
-        "x": 1381.4541718781707,
-        "y": -2291.741114967952
+        "x": 1319.2991041760754,
+        "y": -3508.324595708025
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -144,8 +1060,8 @@
       "version": "1.0.0",
       "id": "lOj0EaMdc",
       "position": {
-        "x": 1380.8450507140465,
-        "y": -2379.974736123564
+        "x": 1318.6899830119512,
+        "y": -3596.558216863637
       },
       "fpEnabled": true
     },
@@ -156,8 +1072,8 @@
       "version": "1.0.0",
       "id": "Ptb_fuRE1",
       "position": {
-        "x": 1286.908036397309,
-        "y": -2464.800104552865
+        "x": 1224.7529686952137,
+        "y": -3681.383585292938
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -176,8 +1092,8 @@
       },
       "id": "iZuCFsZ2C",
       "position": {
-        "x": 3651.7020020664518,
-        "y": 355.4422660229941
+        "x": 2750.682169054964,
+        "y": 155.2156364648858
       },
       "fpEnabled": true
     },
@@ -192,8 +1108,8 @@
       },
       "id": "AVl91JYPc",
       "position": {
-        "x": 3215.138540666248,
-        "y": -9.787089255572596
+        "x": 2383.762752718451,
+        "y": -189.99105585787004
       },
       "fpEnabled": true
     },
@@ -208,8 +1124,8 @@
       },
       "id": "V-qrLnamM",
       "position": {
-        "x": 3071.2960706106537,
-        "y": -106.62962008801026
+        "x": 2304.3410243467692,
+        "y": -296.40964288656505
       },
       "fpEnabled": true
     },
@@ -220,8 +1136,8 @@
       "version": "1.0.0",
       "id": "vUvK8EmVv",
       "position": {
-        "x": 1649.656024543847,
-        "y": -1924.910167386438
+        "x": 1657.2950403653929,
+        "y": -3163.1358270274372
       },
       "fpEnabled": true
     },
@@ -232,8 +1148,8 @@
       "version": "1.0.0",
       "id": "-98IRUECY",
       "position": {
-        "x": 3072.144393087249,
-        "y": 573.1514845754094
+        "x": 2304.8138919492308,
+        "y": 258.9283237014307
       },
       "fpEnabled": true
     },
@@ -244,8 +1160,8 @@
       "version": "1.0.0",
       "id": "fsGIZ9Qfi",
       "position": {
-        "x": 3373.3240333570307,
-        "y": 208.16977338247017
+        "x": 2509.737874567277,
+        "y": 14.036997767434755
       },
       "fpEnabled": true
     },
@@ -256,8 +1172,8 @@
       "version": "1.0.0",
       "id": "s9WrbV-zn",
       "position": {
-        "x": 3650.763050209769,
-        "y": 166.3574837133733
+        "x": 2662.68816086867,
+        "y": 38.386550908843255
       },
       "fpEnabled": true
     },
@@ -268,8 +1184,8 @@
       "version": "1.0.0",
       "id": "emc1x3a8s",
       "position": {
-        "x": 3555.914093017096,
-        "y": 66.54676904620271
+        "x": 2612.2372824040986,
+        "y": -87.54068065721104
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -283,8 +1199,8 @@
       "version": "1.0.0",
       "id": "pGa5ylhp_",
       "position": {
-        "x": 3399.27689248972,
-        "y": -41.57591038182579
+        "x": 2534.82018313667,
+        "y": -191.31060726875893
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -298,8 +1214,8 @@
       "version": "1.0.0",
       "id": "YXDE0BvT_",
       "position": {
-        "x": 3298.9231208201536,
-        "y": -142.55775632085556
+        "x": 2455.3596249862107,
+        "y": -294.03355433438094
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -313,8 +1229,8 @@
       "version": "1.0.0",
       "id": "VamwsEncC",
       "position": {
-        "x": 3201.6917302344395,
-        "y": -245.84281854468406
+        "x": 2379.8919984829,
+        "y": -399.93026824809783
       },
       "fpEnabled": true
     },
@@ -325,8 +1241,8 @@
       "version": "1.0.0",
       "id": "pY9-BkPtx",
       "position": {
-        "x": 3078.6483401712285,
-        "y": -460.013635356563
+        "x": 2219.421970633447,
+        "y": -486.43369752149476
       },
       "fpEnabled": true
     },
@@ -401,8 +1317,8 @@
       "version": "1.0.0",
       "id": "65MAJdKhq",
       "position": {
-        "x": 2540.187466124744,
-        "y": 214.49413828855484
+        "x": 1761.0447119747141,
+        "y": -217.29894110632202
       },
       "fpEnabled": true
     },
@@ -417,8 +1333,8 @@
       },
       "id": "hpUyi4HWm",
       "position": {
-        "x": 2389.797702427322,
-        "y": 215.20860997983408
+        "x": 1611.525498840588,
+        "y": -215.71391885174666
       },
       "fpEnabled": false
     },
@@ -429,8 +1345,8 @@
       "version": "1.0.0",
       "id": "mxu7eKihQ",
       "position": {
-        "x": 2449.8683673890373,
-        "y": 113.32131576337682
+        "x": 1674.207815492192,
+        "y": -321.9539658846846
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -448,8 +1364,8 @@
       },
       "id": "jxU0G0Zzi",
       "position": {
-        "x": 2300.3592486332873,
-        "y": 112.87036227714526
+        "x": 1522.0870450465534,
+        "y": -323.2754699342122
       },
       "fpEnabled": false
     },
@@ -460,8 +1376,8 @@
       "version": "1.0.0",
       "id": "dwXWzYnXE",
       "position": {
-        "x": 2363.992748424591,
-        "y": 1.924549562784648
+        "x": 1589.2027470910416,
+        "y": -426.3863275789077
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -479,8 +1395,8 @@
       },
       "id": "1pSJgPS-X",
       "position": {
-        "x": 2214.9896905956607,
-        "y": 3.9542212695424155
+        "x": 1437.5880375722231,
+        "y": -424.35665587215
       },
       "fpEnabled": true
     },
@@ -495,8 +1411,8 @@
       },
       "id": "CyFFBF_am",
       "position": {
-        "x": 2068.7569822992637,
-        "y": 3.3955387280177547
+        "x": 1348.4847787125298,
+        "y": -532.6403048826171
       },
       "fpEnabled": true
     },
@@ -507,8 +1423,8 @@
       "version": "1.0.0",
       "id": "KREXxLfms",
       "position": {
-        "x": 2296.3613164872813,
-        "y": -97.66636645601231
+        "x": 1499.4806633304888,
+        "y": -530.9772435977047
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -522,8 +1438,8 @@
       "version": "1.0.0",
       "id": "papyIwsEe",
       "position": {
-        "x": 2092.078613052753,
-        "y": -196.22867605818993
+        "x": 1404.2591256797843,
+        "y": -634.2879558920714
       },
       "fpEnabled": true
     },
@@ -534,8 +1450,8 @@
       "version": "1.0.0",
       "id": "tY-coo_y2",
       "position": {
-        "x": 2299.714237305179,
-        "y": 313.93270872463376
+        "x": 1522.3125842817412,
+        "y": -111.62505226063462
       },
       "fpEnabled": true
     },
@@ -546,12 +1462,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "_XU-XYw50",
       "position": {
-        "x": 2539.66344672451,
-        "y": 471.47562273222206
+        "x": 1763.6634467245112,
+        "y": 42.47562273222271
       },
       "fpEnabled": true
     },
@@ -562,8 +1478,8 @@
       "version": "1.0.0",
       "id": "SuTWlsKmi",
       "position": {
-        "x": 2068.16751088376,
-        "y": 572.8178046314976
+        "x": 1348.167510883761,
+        "y": 137.81780463149823
       },
       "fpEnabled": true
     },
@@ -574,12 +1490,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "JKJlbvnba",
       "position": {
-        "x": 1975.3725998620123,
-        "y": 472.8543388573926
+        "x": 1180.559935572652,
+        "y": 34.096854956146544
       },
       "fpEnabled": true
     },
@@ -590,8 +1506,8 @@
       "version": "1.0.0",
       "id": "2AbBMrmlc",
       "position": {
-        "x": 1733.6771876663483,
-        "y": 325.2817101302236
+        "x": 934.5117705605071,
+        "y": -95.19421194180394
       },
       "fpEnabled": true
     },
@@ -602,8 +1518,8 @@
       "version": "1.0.0",
       "id": "b11cNXJ6N",
       "position": {
-        "x": 1975.6920832167345,
-        "y": 225.43267771928342
+        "x": 1180.8794189273742,
+        "y": -195.91379491604022
       },
       "fpEnabled": true
     },
@@ -618,8 +1534,8 @@
       },
       "id": "ZoN_EaW6o",
       "position": {
-        "x": 1835.748926278867,
-        "y": 226.14714941056272
+        "x": 1031.3602057932492,
+        "y": -197.8109749146493
       },
       "fpEnabled": false
     },
@@ -634,8 +1550,8 @@
       },
       "id": "s27no-NeE",
       "position": {
-        "x": 1734.1227645986862,
-        "y": 114.23284551161655
+        "x": 934.0867969295489,
+        "y": -300.1492226173381
       },
       "fpEnabled": false
     },
@@ -646,8 +1562,8 @@
       "version": "1.0.0",
       "id": "C6nHbFT6U",
       "position": {
-        "x": 1887.1140856076208,
-        "y": 114.6837989978481
+        "x": 1085.3370168118913,
+        "y": -299.6982691311066
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -665,8 +1581,8 @@
       },
       "id": "ZUxngNSgz",
       "position": {
-        "x": 1638.3065998015059,
-        "y": -0.7771494390591442
+        "x": 843.4939355121455,
+        "y": -400.3598579919797
       },
       "fpEnabled": true
     },
@@ -677,8 +1593,8 @@
       "version": "1.0.0",
       "id": "7kuZbqItr",
       "position": {
-        "x": 1788.0390998454832,
-        "y": -0.3303785921378477
+        "x": 994.967536682715,
+        "y": -399.9130871450584
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -692,8 +1608,8 @@
       "version": "1.0.0",
       "id": "m32fDzh-i",
       "position": {
-        "x": 1713.071627275827,
-        "y": -99.9297654317977
+        "x": 906.1969445176492,
+        "y": -496.90082229483005
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -707,8 +1623,8 @@
       "version": "1.0.0",
       "id": "Kp-fkWEmP",
       "position": {
-        "x": 1513.913685440832,
-        "y": -199.28480514447222
+        "x": 830.3306671053706,
+        "y": -602.8155354291077
       },
       "fpEnabled": true
     },
@@ -723,8 +1639,8 @@
       },
       "id": "Q5gU7QKV5",
       "position": {
-        "x": 1488.313541460223,
-        "y": -1.335831980583805
+        "x": 756.180517728183,
+        "y": -497.5496530593742
       },
       "fpEnabled": true
     },
@@ -735,8 +1651,8 @@
       "version": "1.0.0",
       "id": "P6iwMwMcN",
       "position": {
-        "x": 1488.349604131437,
-        "y": 573.6928351458764
+        "x": 755.3460298361011,
+        "y": 136.7471846044904
       },
       "fpEnabled": true
     },
@@ -747,8 +1663,8 @@
       "version": "1.0.0",
       "id": "oE-QQ6egy",
       "position": {
-        "x": 927.0168044392235,
-        "y": 573.4316753091109
+        "x": 165.0168044392238,
+        "y": 142.43167530911109
       },
       "fpEnabled": true
     },
@@ -759,8 +1675,8 @@
       "version": "1.0.0",
       "id": "OTCFg3d5U",
       "position": {
-        "x": 1156.9940968721942,
-        "y": 322.2914405482142
+        "x": 341.99409687219463,
+        "y": -103.70855945178559
       },
       "fpEnabled": true
     },
@@ -775,8 +1691,8 @@
       },
       "id": "FbfiCa8Cs",
       "position": {
-        "x": 1246.007577035271,
-        "y": 194.42871123978128
+        "x": 423.0075770352713,
+        "y": -201.57128876021855
       },
       "fpEnabled": false
     },
@@ -791,8 +1707,8 @@
       },
       "id": "3DRBvliTU",
       "position": {
-        "x": 1157.439673804532,
-        "y": 91.21991297379634
+        "x": 342.4396738045324,
+        "y": -304.7800870262035
       },
       "fpEnabled": false
     },
@@ -807,8 +1723,8 @@
       },
       "id": "Nh35eGjUX",
       "position": {
-        "x": 927.7408524760212,
-        "y": -6.984991681632991
+        "x": 165.74085247602153,
+        "y": -506.9849916816328
       },
       "fpEnabled": true
     },
@@ -823,8 +1739,8 @@
       },
       "id": "JarNw2y9A",
       "position": {
-        "x": 1076.7522586042471,
-        "y": -6.063510727002452
+        "x": 254.75225860424757,
+        "y": -405.06351072700227
       },
       "fpEnabled": true
     },
@@ -835,12 +1751,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "i0rxcp9di",
       "position": {
-        "x": 1401.372599862013,
-        "y": 464.8543388573926
+        "x": 580.3725998620133,
+        "y": 28.854338857392783
       },
       "fpEnabled": true
     },
@@ -851,8 +1767,8 @@
       "version": "1.0.0",
       "id": "2JEWK6Xlp",
       "position": {
-        "x": 1401.6206441124684,
-        "y": 193.71423954850198
+        "x": 581.6206441124688,
+        "y": -197.28576045149785
       },
       "fpEnabled": true
     },
@@ -863,8 +1779,8 @@
       "version": "1.0.0",
       "id": "Vj62TSSLG",
       "position": {
-        "x": 1316.5248487565393,
-        "y": 92.54141702332402
+        "x": 494.52484875653965,
+        "y": -303.4585829766758
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -878,8 +1794,8 @@
       "version": "1.0.0",
       "id": "bSpeYKrFJ",
       "position": {
-        "x": 1227.4336900248531,
-        "y": -7.348267164150116
+        "x": 409.4336900248535,
+        "y": -406.34826716414995
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -893,8 +1809,8 @@
       "version": "1.0.0",
       "id": "QvhsqHzcq",
       "position": {
-        "x": 1159.4459299663843,
-        "y": -106.74153359433768
+        "x": 318.4459299663847,
+        "y": -508.7415335943375
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -908,8 +1824,8 @@
       "version": "1.0.0",
       "id": "NlmEriOJi",
       "position": {
-        "x": 952.6351075971342,
-        "y": -205.22906107457305
+        "x": 223.63510759713438,
+        "y": -614.2290610745729
       },
       "fpEnabled": true
     },
@@ -920,8 +1836,8 @@
       "version": "1.0.0",
       "id": "lsaiwTL60",
       "position": {
-        "x": 361.0168044392235,
-        "y": 578.4316753091109
+        "x": -433.32695784605903,
+        "y": 148.09082433468467
       },
       "fpEnabled": true
     },
@@ -936,8 +1852,8 @@
       },
       "id": "kxs7bHIlt",
       "position": {
-        "x": 361.74085247602125,
-        "y": -7.984991681632991
+        "x": -430.978911808917,
+        "y": -511.2928874342218
       },
       "fpEnabled": true
     },
@@ -952,8 +1868,8 @@
       },
       "id": "oOdv9DHua",
       "position": {
-        "x": 514.7522586042471,
-        "y": -10.063510727002452
+        "x": -337.83831005785186,
+        "y": -408.69696771923714
       },
       "fpEnabled": true
     },
@@ -968,8 +1884,8 @@
       },
       "id": "L2LEwDt5X",
       "position": {
-        "x": 599.4396738045319,
-        "y": 87.21991297379634
+        "x": -251.08822653578144,
+        "y": -303.6572899461634
       },
       "fpEnabled": false
     },
@@ -984,8 +1900,8 @@
       },
       "id": "wP36xGdtP",
       "position": {
-        "x": 687.1370264719748,
-        "y": 189.42871123978128
+        "x": -164.04845458082832,
+        "y": -196.53393603922254
       },
       "fpEnabled": false
     },
@@ -996,8 +1912,8 @@
       "version": "1.0.0",
       "id": "TQxLRSNv2",
       "position": {
-        "x": 598.9940968721942,
-        "y": 310.2914405482142
+        "x": -251.04268582561187,
+        "y": -94.05038041074218
       },
       "fpEnabled": true
     },
@@ -1008,12 +1924,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "bP8F0AKuF",
       "position": {
-        "x": 842.3725998620129,
-        "y": 443.8543388573926
+        "x": -7.627400137987308,
+        "y": 38.85433885739253
       },
       "fpEnabled": true
     },
@@ -1024,8 +1940,8 @@
       "version": "1.0.0",
       "id": "7Xr8lHDka",
       "position": {
-        "x": 842.6206441124684,
-        "y": 187.71423954850198
+        "x": -7.792847104937152,
+        "y": -192.1811002204043
       },
       "fpEnabled": true
     },
@@ -1036,8 +1952,8 @@
       "version": "1.0.0",
       "id": "GH5BYuxMu",
       "position": {
-        "x": 759.5248487565393,
-        "y": 86.541417023324
+        "x": -99.47480115661514,
+        "y": -303.8367159097153
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1051,8 +1967,8 @@
       "version": "1.0.0",
       "id": "4jgRJ0JLM",
       "position": {
-        "x": 666.433690024853,
-        "y": -13.348267164150116
+        "x": -184.09421031546034,
+        "y": -407.7076723372944
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1066,8 +1982,8 @@
       "version": "1.0.0",
       "id": "n1226Hr4v",
       "position": {
-        "x": 570.4459299663843,
-        "y": -112.74153359433768
+        "x": -276.08177242967304,
+        "y": -510.6171323033172
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1081,8 +1997,8 @@
       "version": "1.0.0",
       "id": "hjmMipWk5",
       "position": {
-        "x": 387.63510759713415,
-        "y": -212.22906107457305
+        "x": -362.14110248081744,
+        "y": -614.0873516857636
       },
       "fpEnabled": true
     },
@@ -1093,8 +2009,8 @@
       "version": "1.0.0",
       "id": "Ku7aa8_AJ",
       "position": {
-        "x": -216.64327952897716,
-        "y": 575.9765734383797
+        "x": -1031.3070335456525,
+        "y": 150.82446104586552
       },
       "fpEnabled": true
     },
@@ -1105,12 +2021,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "qQ0b9XzII",
       "position": {
-        "x": 273.48220839327564,
-        "y": 443.6225403664381
+        "x": -615.7252084458553,
+        "y": 38.47042797392399
       },
       "fpEnabled": true
     },
@@ -1121,8 +2037,8 @@
       "version": "1.0.0",
       "id": "boOZ8zR90",
       "position": {
-        "x": 24.016000016438113,
-        "y": 317.2275893305499
+        "x": -864.8387499642713,
+        "y": -95.12982010038351
       },
       "fpEnabled": true
     },
@@ -1133,8 +2049,8 @@
       "version": "1.0.0",
       "id": "HuqQ5MV7B",
       "position": {
-        "x": 274.6430589512746,
-        "y": 209.09938573878412
+        "x": -613.4510451389582,
+        "y": -204.8349168756261
       },
       "fpEnabled": true
     },
@@ -1149,8 +2065,8 @@
       },
       "id": "Y7odARg5_",
       "position": {
-        "x": 110.37501868203148,
-        "y": 205.00736340113497
+        "x": -780.7533061484435,
+        "y": -207.47319800082744
       },
       "fpEnabled": false
     },
@@ -1165,8 +2081,8 @@
       },
       "id": "Ljo5hpC1V",
       "position": {
-        "x": 24.497684136969298,
-        "y": 101.04825188611429
+        "x": -865.1149241269953,
+        "y": -313.70588436561377
       },
       "fpEnabled": false
     },
@@ -1181,8 +2097,8 @@
       },
       "id": "mKkyYfkYi",
       "position": {
-        "x": -61.7141890607474,
-        "y": -4.579605565711859
+        "x": -946.3779430774227,
+        "y": -409.7317179582261
       },
       "fpEnabled": true
     },
@@ -1197,8 +2113,8 @@
       },
       "id": "jF0eYot7m",
       "position": {
-        "x": -216.52820097810618,
-        "y": -3.33552989544512
+        "x": -1031.112839199806,
+        "y": -510.5483767043074
       },
       "fpEnabled": true
     },
@@ -1209,8 +2125,8 @@
       "version": "1.0.0",
       "id": "JYur9jq4C",
       "position": {
-        "x": 185.45340965227277,
-        "y": 99.22105758064492
+        "x": -710.9799231609886,
+        "y": -314.0173621045727
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1224,8 +2140,8 @@
       "version": "1.0.0",
       "id": "f3jgPL7fV",
       "position": {
-        "x": 95.844453173771,
-        "y": -3.280278296717597
+        "x": -790.8193008429042,
+        "y": -412.43239068923185
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1239,8 +2155,8 @@
       "version": "1.0.0",
       "id": "9WRT75lrG",
       "position": {
-        "x": -36.98457833483579,
-        "y": -112.69757494198416
+        "x": -880.437623767787,
+        "y": -511.069719265644
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1254,8 +2170,8 @@
       "version": "1.0.0",
       "id": "qjujiEGIL",
       "position": {
-        "x": -192.6694051238399,
-        "y": -217.5138250236211
+        "x": -959.1089059957828,
+        "y": -612.741157296469
       },
       "fpEnabled": true
     },
@@ -1266,8 +2182,8 @@
       "version": "1.0.0",
       "id": "ssq-ojMBv",
       "position": {
-        "x": -567.0954881233598,
-        "y": 324.86327123551723
+        "x": -1496.3478527576183,
+        "y": -69.84757822359768
       },
       "fpEnabled": true
     },
@@ -1278,12 +2194,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "OPks33RLb",
       "position": {
-        "x": -301.7370896165401,
-        "y": 464.04699586474294
+        "x": -1252.4737376842882,
+        "y": 53.27328013958646
       },
       "fpEnabled": true
     },
@@ -1294,8 +2210,8 @@
       "version": "1.0.0",
       "id": "SKZWMFjOt",
       "position": {
-        "x": -301.1561768936093,
-        "y": 208.77595612873074
+        "x": -1255.2522301345016,
+        "y": -169.55780519353598
       },
       "fpEnabled": true
     },
@@ -1310,8 +2226,8 @@
       },
       "id": "-aH5ghKn-",
       "position": {
-        "x": -467.63983690288796,
-        "y": 210.06310747103413
+        "x": -1406.06598000445,
+        "y": -167.40010328793645
       },
       "fpEnabled": false
     },
@@ -1326,8 +2242,8 @@
       },
       "id": "WjWg-Jrim",
       "position": {
-        "x": -568.0710763829591,
-        "y": 105.46831405104604
+        "x": -1495.1800621616717,
+        "y": -276.34764952440514
       },
       "fpEnabled": false
     },
@@ -1342,8 +2258,8 @@
       },
       "id": "0sFJmc0RB",
       "position": {
-        "x": -651.9822257190963,
-        "y": 0.8226621007895574
+        "x": -1579.7188737868446,
+        "y": -382.9510536243672
       },
       "fpEnabled": true
     },
@@ -1358,8 +2274,8 @@
       },
       "id": "YFPx-BNVD",
       "position": {
-        "x": -809.7170646706047,
-        "y": -2.464022527537736
+        "x": -1671.5613801025734,
+        "y": -484.83974570644614
       },
       "fpEnabled": true
     },
@@ -1370,8 +2286,8 @@
       "version": "1.0.0",
       "id": "83HJLRooM",
       "position": {
-        "x": -398.58861051323737,
-        "y": 106.96769049257432
+        "x": -1341.3675064312802,
+        "y": -276.58937420946904
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1385,8 +2301,8 @@
       "version": "1.0.0",
       "id": "5JLcJ7l1d",
       "position": {
-        "x": -488.46231361838295,
-        "y": 2.6344180371113453
+        "x": -1425.1989616861315,
+        "y": -383.1392976880454
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1400,8 +2316,8 @@
       "version": "1.0.0",
       "id": "JW_PEQBTw",
       "position": {
-        "x": -573.2637923083241,
-        "y": -99.30138732593741
+        "x": -1508.6248024601027,
+        "y": -486.335147040092
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1415,8 +2331,8 @@
       "version": "1.0.0",
       "id": "w3dN6Zauq",
       "position": {
-        "x": -785.7215884324828,
-        "y": -199.52284398758616
+        "x": -1592.4283828245943,
+        "y": -584.2592069917467
       },
       "fpEnabled": true
     },
@@ -1427,8 +2343,8 @@
       "version": "1.0.0",
       "id": "djQzAcvOO",
       "position": {
-        "x": -811.2172513976889,
-        "y": 574.4091005398386
+        "x": -1665.9538994654372,
+        "y": 154.39788481468224
       },
       "fpEnabled": true
     },
@@ -1439,8 +2355,8 @@
       "version": "1.0.0",
       "id": "i_Iw-OcpN",
       "position": {
-        "x": -1415.8784805171736,
-        "y": 571.5656171229488
+        "x": -2311.739311404539,
+        "y": 195.47167355531084
       },
       "fpEnabled": true
     },
@@ -1451,8 +2367,8 @@
       "version": "1.0.0",
       "id": "NMYTBjiw7",
       "position": {
-        "x": -1155.880203501558,
-        "y": 340.26686309396143
+        "x": -2122.5536879362235,
+        "y": -48.76873239966923
       },
       "fpEnabled": true
     },
@@ -1463,8 +2379,8 @@
       "version": "1.0.0",
       "id": "1JQCwL5DI",
       "position": {
-        "x": -903.5531643177719,
-        "y": 244.5805104032372
+        "x": -1858.2266487524375,
+        "y": -149.4550850903934
       },
       "fpEnabled": true
     },
@@ -1475,12 +2391,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -x265-params \"lookahead=32\" {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -x265-params {{{args.variables.user.fl_cpu_quality}}} {{{args.variables.user.fl_cpu_main}}}"
       },
       "id": "mCvQdZzsB",
       "position": {
-        "x": -903.706971303175,
-        "y": 470.23307495000984
+        "x": -1933.3804557378403,
+        "y": 89.19747945637923
       },
       "fpEnabled": true
     },
@@ -1495,8 +2411,8 @@
       },
       "id": "FXjOUwNnm",
       "position": {
-        "x": -1070.6261254792862,
-        "y": 240.58963010244895
+        "x": -2016.2996099139516,
+        "y": -149.44596539118172
       },
       "fpEnabled": false
     },
@@ -1511,8 +2427,8 @@
       },
       "id": "V1oGd7yMZ",
       "position": {
-        "x": -1156.401872334553,
-        "y": 137.95061428090332
+        "x": -2123.0753567692186,
+        "y": -247.08498121272734
       },
       "fpEnabled": false
     },
@@ -1527,8 +2443,8 @@
       },
       "id": "6moQeYa1y",
       "position": {
-        "x": -1251.743341137464,
-        "y": 33.6080028819614
+        "x": -2218.4168255721293,
+        "y": -353.4275926116692
       },
       "fpEnabled": true
     },
@@ -1539,8 +2455,8 @@
       "version": "1.0.0",
       "id": "9dDHjQVAQ",
       "position": {
-        "x": -986.6418204746736,
-        "y": 138.64291147898587
+        "x": -1948.315304909339,
+        "y": -248.3926840146448
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1554,8 +2470,8 @@
       "version": "1.0.0",
       "id": "L3SWrc-wc",
       "position": {
-        "x": -1078.6549500975511,
-        "y": 33.62640080041956
+        "x": -2050.3284345322168,
+        "y": -352.40919469321113
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1569,8 +2485,8 @@
       "version": "1.0.0",
       "id": "MxcIeEjnJ",
       "position": {
-        "x": -1170.0198391694366,
-        "y": -72.26792829494786
+        "x": -2143.295368934502,
+        "y": -456.18072670853826
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1584,8 +2500,8 @@
       "version": "1.0.0",
       "id": "-_UvUco4A",
       "position": {
-        "x": -1299.7616676298462,
-        "y": -176.43863685165013
+        "x": -2219.063062470552,
+        "y": -555.1281318854639
       },
       "fpEnabled": true
     },
@@ -1596,8 +2512,8 @@
       "version": "1.0.0",
       "id": "iF4ZLj6dL",
       "position": {
-        "x": 1722.7440562234615,
-        "y": -1348.1250082159715
+        "x": 1660.7654211967242,
+        "y": -2022.7474439647297
       },
       "fpEnabled": true
     },
@@ -1612,8 +2528,8 @@
       },
       "id": "J_Pszmry1",
       "position": {
-        "x": 1710.4415281100273,
-        "y": -895.1771209327178
+        "x": 1743.7219689997214,
+        "y": -1565.5904838220672
       },
       "fpEnabled": true
     },
@@ -1624,20 +2540,20 @@
       "version": "1.0.0",
       "id": "EWtaiclPS",
       "position": {
-        "x": 1487.5347507345027,
-        "y": -1023.3649255410996
+        "x": 1432.0190341679922,
+        "y": -1698.1310412469297
       },
       "fpEnabled": true
     },
     {
-      "name": "ℹ️ We look for available encoder hardware",
+      "name": "ℹ️ We Autodetect available encoder hardware",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
       "id": "o5Y3GYL5b",
       "position": {
-        "x": 1649.1572926395183,
-        "y": -1680.325427261727
+        "x": 1057.4125567389476,
+        "y": -2341.087297457325
       },
       "fpEnabled": true
     },
@@ -1652,8 +2568,8 @@
       },
       "id": "lmH_rPh3f",
       "position": {
-        "x": 1599.3873289139497,
-        "y": -1138.408902951366
+        "x": 1543.8716123474392,
+        "y": -1813.1750186571958
       },
       "fpEnabled": false
     },
@@ -1668,8 +2584,8 @@
       },
       "id": "s_EST_2VU",
       "position": {
-        "x": 1488.5932182359938,
-        "y": -1232.2867932842596
+        "x": 1433.0775016694834,
+        "y": -1907.0529089900897
       },
       "fpEnabled": false
     },
@@ -1680,8 +2596,8 @@
       "version": "1.0.0",
       "id": "DmdzAJSI3",
       "position": {
-        "x": 1685.1948445606868,
-        "y": -1239.584415226721
+        "x": 1629.6791279941763,
+        "y": -1914.350530932551
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1695,8 +2611,8 @@
       "version": "1.0.0",
       "id": "uXG7N31s1",
       "position": {
-        "x": 1545.7193821959993,
-        "y": -1344.9853962977786
+        "x": 1490.2036656294888,
+        "y": -2019.7515120036087
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1710,8 +2626,8 @@
       "version": "1.0.0",
       "id": "Td-fbBEUD",
       "position": {
-        "x": 1445.9822271084372,
-        "y": -1457.0583830278406
+        "x": 1390.4665105419267,
+        "y": -2131.8244987336707
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1729,8 +2645,8 @@
       },
       "id": "R3xHLKgAU",
       "position": {
-        "x": 1368.887668509764,
-        "y": -1347.7118045703965
+        "x": 1313.3719519432534,
+        "y": -2022.4779202762265
       },
       "fpEnabled": true
     },
@@ -1741,8 +2657,8 @@
       "version": "1.0.0",
       "id": "EfDEzbZEY",
       "position": {
-        "x": 1671.1339188104264,
-        "y": -1810.3569228243846
+        "x": 1650.7729346319722,
+        "y": -3067.5825824653843
       },
       "fpEnabled": true
     },
@@ -1753,8 +2669,8 @@
       "version": "1.0.0",
       "id": "EJvxHSEqz",
       "position": {
-        "x": 1667.5595296986808,
-        "y": -2195.487664428938
+        "x": 1655.8688561334513,
+        "y": -3402.515596739952
       },
       "fpEnabled": true
     },
@@ -1765,8 +2681,8 @@
       "version": "1.0.0",
       "id": "HyrJgw8Yn",
       "position": {
-        "x": 929.6996116153748,
-        "y": -2339.252499863712
+        "x": 867.5445439132795,
+        "y": -3555.8359806037847
       },
       "fpEnabled": true
     },
@@ -1777,8 +2693,8 @@
       "version": "1.0.0",
       "id": "MKOhRW6BY",
       "position": {
-        "x": 3347.4562730572093,
-        "y": -699.1037488624102
+        "x": 2518.6921367992995,
+        "y": -690.3982432294489
       },
       "fpEnabled": true
     },
@@ -1789,8 +2705,8 @@
       "version": "1.0.0",
       "id": "8C0OxWjcR",
       "position": {
-        "x": 3175.259867486518,
-        "y": -563.4361730507193
+        "x": 2348.1970518886533,
+        "y": -573.7744582456926
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1825,8 +2741,8 @@
       },
       "id": "kNV2dDj7U",
       "position": {
-        "x": 1270.0325286822515,
-        "y": -1467.243025220209
+        "x": 1214.516812115741,
+        "y": -2142.009140926039
       },
       "fpEnabled": true
     },
@@ -1873,8 +2789,8 @@
       "version": "1.0.0",
       "id": "h_GgZQ6qp",
       "position": {
-        "x": 360.48083022156055,
-        "y": 769.324218829294
+        "x": 359.76106593662183,
+        "y": 599.3497917056494
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1889,8 +2805,8 @@
       "version": "2.0.0",
       "id": "wTcfjtaKa",
       "position": {
-        "x": -1138.5773989551608,
-        "y": -176.86322757568985
+        "x": -1938.2508833898264,
+        "y": -650.8988230693204
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1905,8 +2821,8 @@
       "version": "2.0.0",
       "id": "d87C98I6u",
       "position": {
-        "x": -624.9270578719139,
-        "y": -196.78874678515785
+        "x": -1300.6822397943633,
+        "y": -660.7852962841137
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1921,8 +2837,8 @@
       "version": "2.0.0",
       "id": "KfxaRRZkO",
       "position": {
-        "x": -23.645190492594168,
-        "y": -213.5497460543574
+        "x": -740.8688806469785,
+        "y": -703.7018584468719
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1937,8 +2853,8 @@
       "version": "2.0.0",
       "id": "0up0YyNt9",
       "position": {
-        "x": 609.3983168772235,
-        "y": -213.3430335061923
+        "x": -146.60168312277662,
+        "y": -700.3430335061923
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1953,8 +2869,8 @@
       "version": "2.0.0",
       "id": "AmmXKXPQP",
       "position": {
-        "x": 1151.731544375795,
-        "y": -199.47621972697198
+        "x": 461.73154437579535,
+        "y": -703.4762197269717
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1969,8 +2885,8 @@
       "version": "2.0.0",
       "id": "8M4zDA1Eo",
       "position": {
-        "x": 2263.723708029799,
-        "y": -193.89790391917415
+        "x": 1606.0846328666476,
+        "y": -718.1095603778331
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1985,8 +2901,8 @@
       "version": "1.0.0",
       "id": "dgwdLfcO1",
       "position": {
-        "x": 2504.4346285489305,
-        "y": -543.1554522252927
+        "x": 2071.4346285489314,
+        "y": -1060.1554522252927
       },
       "fpEnabled": true
     },
@@ -1997,8 +2913,8 @@
       "version": "1.0.0",
       "id": "acjMNmSX_",
       "position": {
-        "x": 1294.3667888566035,
-        "y": -1923.037686396808
+        "x": 1291.0058046781494,
+        "y": -3159.263346037808
       },
       "fpEnabled": true
     },
@@ -2009,8 +2925,8 @@
       "version": "1.0.0",
       "id": "whLxoif7t",
       "position": {
-        "x": 1119.676210586822,
-        "y": -2049.6284215366527
+        "x": 1010.0188580969027,
+        "y": -3254.33633107977
       },
       "fpEnabled": true
     },
@@ -2081,8 +2997,8 @@
       "version": "2.0.0",
       "id": "7xTim8Qvt",
       "position": {
-        "x": 1688.7243117921676,
-        "y": -194.70088884662965
+        "x": 1059.8241361338567,
+        "y": -695.7008888466294
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2097,8 +3013,8 @@
       "version": "2.0.0",
       "id": "UveiLLkBS",
       "position": {
-        "x": 3079.4570366375215,
-        "y": -362.7773100377575
+        "x": 2219.081968744743,
+        "y": -415.61743436762106
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2113,8 +3029,8 @@
       "version": "1.0.0",
       "id": "6FN1FFcbH",
       "position": {
-        "x": 1602.81457972356,
-        "y": -291.35624887326236
+        "x": 921.3217841738785,
+        "y": -779.4268991779472
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2146,8 +3062,8 @@
       "version": "1.0.0",
       "id": "BiPlhKExH",
       "position": {
-        "x": 2171.0499810255697,
-        "y": -283.242093552035
+        "x": 1521.0376433224708,
+        "y": -801.2319496725314
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2163,8 +3079,8 @@
       "version": "1.0.0",
       "id": "cV5-LAnLV",
       "position": {
-        "x": 1038.5516046170505,
-        "y": -287.8416300326572
+        "x": 353.00503056901016,
+        "y": -788.2855667464739
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2180,8 +3096,8 @@
       "version": "1.0.0",
       "id": "ooUXmcK1T",
       "position": {
-        "x": 498.1269163325702,
-        "y": -299.3090466857035
+        "x": -236.24145041406734,
+        "y": -784.2015510876938
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2197,8 +3113,8 @@
       "version": "1.0.0",
       "id": "YjQXZRWjC",
       "position": {
-        "x": -100.89006056188938,
-        "y": -305.9275242700228
+        "x": -808.5538145785647,
+        "y": -791.0796366625375
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2214,8 +3130,8 @@
       "version": "1.0.0",
       "id": "zGeOEYjqk",
       "position": {
-        "x": -759.3830246975045,
-        "y": -285.0776640142569
+        "x": -1325.1196727652537,
+        "y": -749.8513797394144
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2235,8 +3151,8 @@
       },
       "id": "R2VJtivho",
       "position": {
-        "x": -1414.2367801719258,
-        "y": 31.102968870812674
+        "x": -2311.7744109302284,
+        "y": -452.92314432183207
       },
       "fpEnabled": true
     },
@@ -2247,8 +3163,8 @@
       "version": "1.0.0",
       "id": "jnRtGCtQV",
       "position": {
-        "x": 1604.5399732338822,
-        "y": -371.9026422301828
+        "x": 923.0471776842007,
+        "y": -845.458705516366
       },
       "fpEnabled": true
     },
@@ -2259,8 +3175,8 @@
       "version": "1.0.0",
       "id": "NGln0iFU_",
       "position": {
-        "x": 2170.28801096462,
-        "y": -372.87507627725665
+        "x": 1520.275673261521,
+        "y": -868.4332979146141
       },
       "fpEnabled": true
     },
@@ -2271,8 +3187,8 @@
       "version": "1.0.0",
       "id": "LYYXGXYRX",
       "position": {
-        "x": 1038.9947905366,
-        "y": -368.37778970700543
+        "x": 353.44821648855964,
+        "y": -848.8217264208222
       },
       "fpEnabled": true
     },
@@ -2283,8 +3199,8 @@
       "version": "1.0.0",
       "id": "0f8eCw-A0",
       "position": {
-        "x": 497.8058791055404,
-        "y": -366.9933983547537
+        "x": -233.9234718195512,
+        "y": -840.9104458193912
       },
       "fpEnabled": true
     },
@@ -2295,8 +3211,8 @@
       "version": "1.0.0",
       "id": "j6U00zwwm",
       "position": {
-        "x": -102.47841356188393,
-        "y": -361.4043186193236
+        "x": -810.1421675785593,
+        "y": -846.5564310118384
       },
       "fpEnabled": true
     },
@@ -2319,8 +3235,8 @@
       "version": "1.0.0",
       "id": "CRWm2FTTc",
       "position": {
-        "x": 1294.1920089521345,
-        "y": -1726.4510674241274
+        "x": 1290.8310247736804,
+        "y": -2983.676727065127
       },
       "fpEnabled": true
     },
@@ -2331,8 +3247,8 @@
       "version": "1.0.0",
       "id": "hFo4ZDW0g",
       "position": {
-        "x": 1270.544261355596,
-        "y": -628.8207351999499
+        "x": 1216.4444370139074,
+        "y": -1153.9848836875617
       },
       "fpEnabled": true
     },
@@ -2343,8 +3259,8 @@
       "version": "1.0.0",
       "id": "BN8v5Ik_3",
       "position": {
-        "x": -1208.950345658603,
-        "y": -360.6386627702467
+        "x": -1963.6238300932687,
+        "y": -819.6742582638777
       },
       "fpEnabled": true
     },
@@ -2355,8 +3271,8 @@
       "version": "1.0.0",
       "id": "kStJNOmzz",
       "position": {
-        "x": -760.1000688484147,
-        "y": -355.6076421956577
+        "x": -1325.8367169161638,
+        "y": -820.3813579208152
       },
       "fpEnabled": true
     },
@@ -2367,8 +3283,8 @@
       "version": "1.0.0",
       "id": "gAHMD-XEk",
       "position": {
-        "x": -1208.46524373685,
-        "y": -261.0129729968256
+        "x": -1963.201594437557,
+        "y": -749.6878857393567
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2384,8 +3300,8 @@
       "version": "1.0.0",
       "id": "zS_dE8Dx2",
       "position": {
-        "x": 1293.8676647618965,
-        "y": -1831.0710044198422
+        "x": 1290.5066805834424,
+        "y": -3068.2966640608415
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2416,8 +3332,8 @@
       "version": "1.0.0",
       "id": "Kq7SA5w3K",
       "position": {
-        "x": 1469.0408309603315,
-        "y": -2615.287813195491
+        "x": 1406.8857632582362,
+        "y": -3831.8712939355637
       },
       "fpEnabled": true
     },
@@ -2443,8 +3359,8 @@
       "version": "1.0.0",
       "id": "2OlpiKQ6y",
       "position": {
-        "x": 1487.5853112874645,
-        "y": -3057.0981267011616
+        "x": 1425.4302435853692,
+        "y": -4273.6816074412345
       },
       "fpEnabled": true
     },
@@ -2455,8 +3371,8 @@
       "version": "2.0.0",
       "id": "NAQG8aB_i",
       "position": {
-        "x": 1119.3673552416903,
-        "y": -1965.861844482787
+        "x": 1011.029510662544,
+        "y": -3169.250246115131
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2471,8 +3387,8 @@
       "version": "1.0.0",
       "id": "Aau4aHpE1",
       "position": {
-        "x": 1488.878165080124,
-        "y": -2912.246143607981
+        "x": 1426.7230973780288,
+        "y": -4128.8296243480545
       },
       "fpEnabled": true
     },
@@ -2495,8 +3411,8 @@
       "version": "1.0.0",
       "id": "K_Z-TiFwk",
       "position": {
-        "x": 3175.9340892171663,
-        "y": -675.3635509081404
+        "x": 2347.1699529592565,
+        "y": -666.6580452751791
       },
       "fpEnabled": true
     },
@@ -2523,8 +3439,8 @@
       "version": "1.0.0",
       "id": "mZGhkFE_A",
       "position": {
-        "x": 1338.8758213910596,
-        "y": -2048.2481064600142
+        "x": 1297.5148372126057,
+        "y": -3258.473766101014
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2538,8 +3454,8 @@
       "version": "1.0.0",
       "id": "1eZMD_YUy",
       "position": {
-        "x": 1261.6900116593533,
-        "y": -2130.1061390206632
+        "x": 1199.534943957258,
+        "y": -3346.689619760736
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2553,8 +3469,8 @@
       "version": "1.0.0",
       "id": "GCZId3cYn",
       "position": {
-        "x": 1920.1127398566166,
-        "y": -481.231961935713
+        "x": 1367.2389252427745,
+        "y": -992.6344223818486
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -2569,8 +3485,8 @@
       "version": "1.0.0",
       "id": "g-IegzkNa",
       "position": {
-        "x": 1454.2505476224142,
-        "y": -1992.358286355478
+        "x": 1436.88956344396,
+        "y": -3207.5839459964777
       },
       "fpEnabled": true
     },
@@ -2605,8 +3521,8 @@
       "version": "1.0.0",
       "id": "ykLLIDQ7U",
       "position": {
-        "x": 2506.7732195465946,
-        "y": -390.78914853017346
+        "x": 2013.7732195465956,
+        "y": -859.7891485301734
       },
       "fpEnabled": true
     },
@@ -2617,8 +3533,8 @@
       "version": "1.0.0",
       "id": "Wmd8ArPMo",
       "position": {
-        "x": 2506.6566973674944,
-        "y": -302.7738708454635
+        "x": 2013.6566973674953,
+        "y": -771.7738708454635
       },
       "fpEnabled": true
     },
@@ -2629,8 +3545,8 @@
       "version": "1.0.0",
       "id": "V8F6F-I1d",
       "position": {
-        "x": 1295.2642637864753,
-        "y": -1590.985203686126
+        "x": 1239.7485472199648,
+        "y": -2241.1156374869884
       },
       "fpEnabled": true
     }
@@ -2789,13 +3705,6 @@
       "target": "jnRtGCtQV",
       "targetHandle": null,
       "id": "EsLgHVRvl"
-    },
-    {
-      "source": "1eZMD_YUy",
-      "sourceHandle": "2",
-      "target": "mZGhkFE_A",
-      "targetHandle": null,
-      "id": "DFY8ii0WT"
     },
     {
       "source": "mZGhkFE_A",
@@ -2987,13 +3896,6 @@
       "id": "RwBZz1BPL"
     },
     {
-      "source": "kNV2dDj7U",
-      "sourceHandle": "1",
-      "target": "hFo4ZDW0g",
-      "targetHandle": null,
-      "id": "7js-Kfz1c"
-    },
-    {
       "source": "K_Z-TiFwk",
       "sourceHandle": "1",
       "target": "8C0OxWjcR",
@@ -3027,13 +3929,6 @@
       "target": "CRWm2FTTc",
       "targetHandle": null,
       "id": "cHlbRdoyl"
-    },
-    {
-      "source": "CRWm2FTTc",
-      "sourceHandle": "1",
-      "target": "V8F6F-I1d",
-      "targetHandle": null,
-      "id": "a_NAatpTR"
     },
     {
       "source": "V8F6F-I1d",
@@ -3078,13 +3973,6 @@
       "id": "CLlTl7RTU"
     },
     {
-      "source": "R3xHLKgAU",
-      "sourceHandle": "1",
-      "target": "hFo4ZDW0g",
-      "targetHandle": null,
-      "id": "6EUrN0ZYW"
-    },
-    {
       "source": "DmdzAJSI3",
       "sourceHandle": "2",
       "target": "J_Pszmry1",
@@ -3097,13 +3985,6 @@
       "target": "J_Pszmry1",
       "targetHandle": null,
       "id": "4WEVd0lOd"
-    },
-    {
-      "source": "J_Pszmry1",
-      "sourceHandle": "1",
-      "target": "hFo4ZDW0g",
-      "targetHandle": null,
-      "id": "XLlJNM6rP"
     },
     {
       "source": "uXG7N31s1",
@@ -3132,13 +4013,6 @@
       "target": "EWtaiclPS",
       "targetHandle": null,
       "id": "A7RWfWPKp"
-    },
-    {
-      "source": "gAHMD-XEk",
-      "sourceHandle": "1",
-      "target": "-_UvUco4A",
-      "targetHandle": null,
-      "id": "AOFRp1FHL"
     },
     {
       "source": "-_UvUco4A",
@@ -3267,13 +4141,6 @@
       "id": "hem2XxOiJ"
     },
     {
-      "source": "zGeOEYjqk",
-      "sourceHandle": "1",
-      "target": "w3dN6Zauq",
-      "targetHandle": null,
-      "id": "ujuwtCwh3"
-    },
-    {
       "source": "w3dN6Zauq",
       "sourceHandle": "1",
       "target": "YFPx-BNVD",
@@ -3356,13 +4223,6 @@
       "target": "OPks33RLb",
       "targetHandle": null,
       "id": "91tGKGaPd"
-    },
-    {
-      "source": "YjQXZRWjC",
-      "sourceHandle": "1",
-      "target": "qjujiEGIL",
-      "targetHandle": null,
-      "id": "CnTgmybMq"
     },
     {
       "source": "f3jgPL7fV",
@@ -3512,13 +4372,6 @@
       "id": "Yfm3TDbJw"
     },
     {
-      "source": "ooUXmcK1T",
-      "sourceHandle": "1",
-      "target": "hjmMipWk5",
-      "targetHandle": null,
-      "id": "HuC2TnKwo"
-    },
-    {
       "source": "hjmMipWk5",
       "sourceHandle": "2",
       "target": "n1226Hr4v",
@@ -3629,13 +4482,6 @@
       "target": "kxs7bHIlt",
       "targetHandle": null,
       "id": "IOmw5nPz5"
-    },
-    {
-      "source": "cV5-LAnLV",
-      "sourceHandle": "1",
-      "target": "NlmEriOJi",
-      "targetHandle": null,
-      "id": "k45oKfua3"
     },
     {
       "source": "NlmEriOJi",
@@ -3771,13 +4617,6 @@
       "id": "vKzrByWlJ"
     },
     {
-      "source": "6FN1FFcbH",
-      "sourceHandle": "1",
-      "target": "Kp-fkWEmP",
-      "targetHandle": null,
-      "id": "iftZppwfB"
-    },
-    {
       "source": "Kp-fkWEmP",
       "sourceHandle": "2",
       "target": "m32fDzh-i",
@@ -3888,13 +4727,6 @@
       "target": "_XU-XYw50",
       "targetHandle": null,
       "id": "8RrLJapZr"
-    },
-    {
-      "source": "BiPlhKExH",
-      "sourceHandle": "1",
-      "target": "papyIwsEe",
-      "targetHandle": null,
-      "id": "EEqdE9-R6"
     },
     {
       "source": "papyIwsEe",
@@ -4212,13 +5044,6 @@
       "id": "GAayAC-jQ"
     },
     {
-      "source": "8C0OxWjcR",
-      "sourceHandle": "2",
-      "target": "VamwsEncC",
-      "targetHandle": null,
-      "id": "XXARLGvbr"
-    },
-    {
       "source": "lOj0EaMdc",
       "sourceHandle": "1",
       "target": "Muq2K7p8b",
@@ -4315,6 +5140,776 @@
       "target": "K_Z-TiFwk",
       "targetHandle": null,
       "id": "RdfCPHA8R"
+    },
+    {
+      "source": "7cKHQFNya",
+      "sourceHandle": "1",
+      "target": "DPb4Nvv-V",
+      "targetHandle": null,
+      "id": "7oabNvamo"
+    },
+    {
+      "source": "1eZMD_YUy",
+      "sourceHandle": "2",
+      "target": "mZGhkFE_A",
+      "targetHandle": null,
+      "id": "XUwU1ds-R"
+    },
+    {
+      "source": "kNV2dDj7U",
+      "sourceHandle": "1",
+      "target": "1XOB_1S0B",
+      "targetHandle": null,
+      "id": "4awyVlsxh"
+    },
+    {
+      "source": "R3xHLKgAU",
+      "sourceHandle": "1",
+      "target": "1XOB_1S0B",
+      "targetHandle": null,
+      "id": "ZWY8UvaGq"
+    },
+    {
+      "source": "J_Pszmry1",
+      "sourceHandle": "1",
+      "target": "1XOB_1S0B",
+      "targetHandle": null,
+      "id": "_jOWBGiOG"
+    },
+    {
+      "source": "7cKHQFNya",
+      "sourceHandle": "2",
+      "target": "hFo4ZDW0g",
+      "targetHandle": null,
+      "id": "bsxuHkZlc"
+    },
+    {
+      "source": "1XOB_1S0B",
+      "sourceHandle": "1",
+      "target": "7cKHQFNya",
+      "targetHandle": null,
+      "id": "8_z7dQ_j1"
+    },
+    {
+      "source": "CRWm2FTTc",
+      "sourceHandle": "1",
+      "target": "2YrneglXQ",
+      "targetHandle": null,
+      "id": "iOzNJfG0O"
+    },
+    {
+      "source": "2YrneglXQ",
+      "sourceHandle": "1",
+      "target": "V8F6F-I1d",
+      "targetHandle": null,
+      "id": "jpm-Vyd24"
+    },
+    {
+      "source": "2YrneglXQ",
+      "sourceHandle": "2",
+      "target": "32CrEuf2a",
+      "targetHandle": null,
+      "id": "q1HSpoJl0"
+    },
+    {
+      "source": "32CrEuf2a",
+      "sourceHandle": "1",
+      "target": "Td-fbBEUD",
+      "targetHandle": null,
+      "id": "nNCj-6of7"
+    },
+    {
+      "source": "blVXUZ_kL",
+      "sourceHandle": "1",
+      "target": "2YrneglXQ",
+      "targetHandle": null,
+      "id": "k77iE7ehB"
+    },
+    {
+      "source": "32CrEuf2a",
+      "sourceHandle": "2",
+      "target": "z_isysCp0",
+      "targetHandle": null,
+      "id": "SYpliz3HW"
+    },
+    {
+      "source": "z_isysCp0",
+      "sourceHandle": "1",
+      "target": "uXG7N31s1",
+      "targetHandle": null,
+      "id": "JT65kR4px"
+    },
+    {
+      "source": "z_isysCp0",
+      "sourceHandle": "2",
+      "target": "-osAHJecO",
+      "targetHandle": null,
+      "id": "gZZLKemsi"
+    },
+    {
+      "source": "-osAHJecO",
+      "sourceHandle": "1",
+      "target": "DmdzAJSI3",
+      "targetHandle": null,
+      "id": "3YXLswgcX"
+    },
+    {
+      "source": "-osAHJecO",
+      "sourceHandle": "2",
+      "target": "TMJnfaqwH",
+      "targetHandle": null,
+      "id": "orL8-we5o"
+    },
+    {
+      "source": "TMJnfaqwH",
+      "sourceHandle": "1",
+      "target": "J_Pszmry1",
+      "targetHandle": null,
+      "id": "z67GCwNAs"
+    },
+    {
+      "source": "TMJnfaqwH",
+      "sourceHandle": "2",
+      "target": "XdXKk3kaJ",
+      "targetHandle": null,
+      "id": "eDd0oizu9"
+    },
+    {
+      "source": "XdXKk3kaJ",
+      "sourceHandle": "1",
+      "target": "V8F6F-I1d",
+      "targetHandle": null,
+      "id": "qX72H1LwJ"
+    },
+    {
+      "source": "DmdzAJSI3",
+      "sourceHandle": "err1",
+      "target": "EWtaiclPS",
+      "targetHandle": null,
+      "id": "Km2F-NSwB"
+    },
+    {
+      "source": "uXG7N31s1",
+      "sourceHandle": "err1",
+      "target": "EWtaiclPS",
+      "targetHandle": null,
+      "id": "DHLWXQ6FI"
+    },
+    {
+      "source": "gAHMD-XEk",
+      "sourceHandle": "1",
+      "target": "VZz-AhqVE",
+      "targetHandle": null,
+      "id": "d3JMZhPzp"
+    },
+    {
+      "source": "VZz-AhqVE",
+      "sourceHandle": "1",
+      "target": "-_UvUco4A",
+      "targetHandle": null,
+      "id": "gGRi8B9KC"
+    },
+    {
+      "source": "VZz-AhqVE",
+      "sourceHandle": "2",
+      "target": "O9Icx0xTs",
+      "targetHandle": null,
+      "id": "Ei_6XvnAU"
+    },
+    {
+      "source": "O9Icx0xTs",
+      "sourceHandle": "1",
+      "target": "MxcIeEjnJ",
+      "targetHandle": null,
+      "id": "xvuq--laB"
+    },
+    {
+      "source": "O9Icx0xTs",
+      "sourceHandle": "2",
+      "target": "Tx_nwHPgi",
+      "targetHandle": null,
+      "id": "tkz5O70wy"
+    },
+    {
+      "source": "Tx_nwHPgi",
+      "sourceHandle": "1",
+      "target": "L3SWrc-wc",
+      "targetHandle": null,
+      "id": "rAhlgteQz"
+    },
+    {
+      "source": "Tx_nwHPgi",
+      "sourceHandle": "2",
+      "target": "25p45rk-V",
+      "targetHandle": null,
+      "id": "j44ctkxCZ"
+    },
+    {
+      "source": "25p45rk-V",
+      "sourceHandle": "1",
+      "target": "9dDHjQVAQ",
+      "targetHandle": null,
+      "id": "aI7pl1Pip"
+    },
+    {
+      "source": "25p45rk-V",
+      "sourceHandle": "2",
+      "target": "gs0oI5hEd",
+      "targetHandle": null,
+      "id": "ZeY6W2yJz"
+    },
+    {
+      "source": "gs0oI5hEd",
+      "sourceHandle": "1",
+      "target": "1JQCwL5DI",
+      "targetHandle": null,
+      "id": "KdpG9-TB9"
+    },
+    {
+      "source": "zGeOEYjqk",
+      "sourceHandle": "1",
+      "target": "lHztZIs05",
+      "targetHandle": null,
+      "id": "U-jd1Gxai"
+    },
+    {
+      "source": "lHztZIs05",
+      "sourceHandle": "2",
+      "target": "TTRRz69gd",
+      "targetHandle": null,
+      "id": "rmw9vXrtW"
+    },
+    {
+      "source": "lHztZIs05",
+      "sourceHandle": "1",
+      "target": "w3dN6Zauq",
+      "targetHandle": null,
+      "id": "TuxjXm0VA"
+    },
+    {
+      "source": "TTRRz69gd",
+      "sourceHandle": "1",
+      "target": "JW_PEQBTw",
+      "targetHandle": null,
+      "id": "7sk2Oe81j"
+    },
+    {
+      "source": "TTRRz69gd",
+      "sourceHandle": "2",
+      "target": "yq1ezkZ_q",
+      "targetHandle": null,
+      "id": "C-5gyYLI0"
+    },
+    {
+      "source": "yq1ezkZ_q",
+      "sourceHandle": "1",
+      "target": "5JLcJ7l1d",
+      "targetHandle": null,
+      "id": "T6a8IJiqn"
+    },
+    {
+      "source": "yq1ezkZ_q",
+      "sourceHandle": "2",
+      "target": "3xA7GTCEI",
+      "targetHandle": null,
+      "id": "PECaXRt9c"
+    },
+    {
+      "source": "3xA7GTCEI",
+      "sourceHandle": "2",
+      "target": "U0mS3iqkP",
+      "targetHandle": null,
+      "id": "BVSqXoLoy"
+    },
+    {
+      "source": "3xA7GTCEI",
+      "sourceHandle": "1",
+      "target": "83HJLRooM",
+      "targetHandle": null,
+      "id": "SdX3gnfdg"
+    },
+    {
+      "source": "U0mS3iqkP",
+      "sourceHandle": "1",
+      "target": "SKZWMFjOt",
+      "targetHandle": null,
+      "id": "1FWI3fakG"
+    },
+    {
+      "source": "YjQXZRWjC",
+      "sourceHandle": "1",
+      "target": "B2BYltG4f",
+      "targetHandle": null,
+      "id": "5Yat__kXc"
+    },
+    {
+      "source": "B2BYltG4f",
+      "sourceHandle": "2",
+      "target": "1U4V0YmLi",
+      "targetHandle": null,
+      "id": "100TVwkjk"
+    },
+    {
+      "source": "1U4V0YmLi",
+      "sourceHandle": "2",
+      "target": "uC50uBfGM",
+      "targetHandle": null,
+      "id": "F0BIvUnHy"
+    },
+    {
+      "source": "uC50uBfGM",
+      "sourceHandle": "2",
+      "target": "F3DOic_ES",
+      "targetHandle": null,
+      "id": "8-H6i5WS7"
+    },
+    {
+      "source": "F3DOic_ES",
+      "sourceHandle": "2",
+      "target": "bpWH7u3BU",
+      "targetHandle": null,
+      "id": "1XACsY7h2"
+    },
+    {
+      "source": "B2BYltG4f",
+      "sourceHandle": "1",
+      "target": "qjujiEGIL",
+      "targetHandle": null,
+      "id": "X8MUU7m9I"
+    },
+    {
+      "source": "1U4V0YmLi",
+      "sourceHandle": "1",
+      "target": "9WRT75lrG",
+      "targetHandle": null,
+      "id": "yyf655Ygm"
+    },
+    {
+      "source": "uC50uBfGM",
+      "sourceHandle": "1",
+      "target": "f3jgPL7fV",
+      "targetHandle": null,
+      "id": "zsf8ELXIG"
+    },
+    {
+      "source": "F3DOic_ES",
+      "sourceHandle": "1",
+      "target": "JYur9jq4C",
+      "targetHandle": null,
+      "id": "YZx7r-Ykq"
+    },
+    {
+      "source": "bpWH7u3BU",
+      "sourceHandle": "1",
+      "target": "HuqQ5MV7B",
+      "targetHandle": null,
+      "id": "C5FpAEHQ6"
+    },
+    {
+      "source": "nktrbv06G",
+      "sourceHandle": "2",
+      "target": "pFU_l9J4D",
+      "targetHandle": null,
+      "id": "7GRDPOGSv"
+    },
+    {
+      "source": "pFU_l9J4D",
+      "sourceHandle": "2",
+      "target": "tL43A623_",
+      "targetHandle": null,
+      "id": "oKZ1Nlziv"
+    },
+    {
+      "source": "tL43A623_",
+      "sourceHandle": "2",
+      "target": "x_xEA_Vd8",
+      "targetHandle": null,
+      "id": "gtAyZYXj-"
+    },
+    {
+      "source": "x_xEA_Vd8",
+      "sourceHandle": "2",
+      "target": "jiYcUez-u",
+      "targetHandle": null,
+      "id": "rANZvKzZ8"
+    },
+    {
+      "source": "ooUXmcK1T",
+      "sourceHandle": "1",
+      "target": "nktrbv06G",
+      "targetHandle": null,
+      "id": "3wAWxgOzt"
+    },
+    {
+      "source": "nktrbv06G",
+      "sourceHandle": "1",
+      "target": "hjmMipWk5",
+      "targetHandle": null,
+      "id": "ZqgEcOGb-"
+    },
+    {
+      "source": "pFU_l9J4D",
+      "sourceHandle": "1",
+      "target": "n1226Hr4v",
+      "targetHandle": null,
+      "id": "Lpa5hoH9-"
+    },
+    {
+      "source": "tL43A623_",
+      "sourceHandle": "1",
+      "target": "4jgRJ0JLM",
+      "targetHandle": null,
+      "id": "9PdMeyL76"
+    },
+    {
+      "source": "x_xEA_Vd8",
+      "sourceHandle": "1",
+      "target": "GH5BYuxMu",
+      "targetHandle": null,
+      "id": "FEMMRzBmp"
+    },
+    {
+      "source": "jiYcUez-u",
+      "sourceHandle": "1",
+      "target": "7Xr8lHDka",
+      "targetHandle": null,
+      "id": "7Cu2aVHgN"
+    },
+    {
+      "source": "yEMzF4V8R",
+      "sourceHandle": "2",
+      "target": "prQ9ImHnB",
+      "targetHandle": null,
+      "id": "KdtiCDKMu"
+    },
+    {
+      "source": "-E2NVcgHu",
+      "sourceHandle": "2",
+      "target": "yEMzF4V8R",
+      "targetHandle": null,
+      "id": "dygUUprG6"
+    },
+    {
+      "source": "VJDakuVmY",
+      "sourceHandle": "2",
+      "target": "-E2NVcgHu",
+      "targetHandle": null,
+      "id": "SOhq_RhtF"
+    },
+    {
+      "source": "071XBKlJA",
+      "sourceHandle": "2",
+      "target": "VJDakuVmY",
+      "targetHandle": null,
+      "id": "DMHRyJ3rp"
+    },
+    {
+      "source": "cV5-LAnLV",
+      "sourceHandle": "1",
+      "target": "071XBKlJA",
+      "targetHandle": null,
+      "id": "Xc3PDghKh"
+    },
+    {
+      "source": "071XBKlJA",
+      "sourceHandle": "1",
+      "target": "NlmEriOJi",
+      "targetHandle": null,
+      "id": "sr-Qvtff_"
+    },
+    {
+      "source": "VJDakuVmY",
+      "sourceHandle": "1",
+      "target": "QvhsqHzcq",
+      "targetHandle": null,
+      "id": "2HVle1Qm7"
+    },
+    {
+      "source": "-E2NVcgHu",
+      "sourceHandle": "1",
+      "target": "bSpeYKrFJ",
+      "targetHandle": null,
+      "id": "eKwNZRpFN"
+    },
+    {
+      "source": "yEMzF4V8R",
+      "sourceHandle": "1",
+      "target": "Vj62TSSLG",
+      "targetHandle": null,
+      "id": "I2xcdJQI8"
+    },
+    {
+      "source": "prQ9ImHnB",
+      "sourceHandle": "1",
+      "target": "2JEWK6Xlp",
+      "targetHandle": null,
+      "id": "D8r7PcIRU"
+    },
+    {
+      "source": "6FN1FFcbH",
+      "sourceHandle": "1",
+      "target": "6eZolmJ41",
+      "targetHandle": null,
+      "id": "92O7L6AlO"
+    },
+    {
+      "source": "6eZolmJ41",
+      "sourceHandle": "1",
+      "target": "Kp-fkWEmP",
+      "targetHandle": null,
+      "id": "lWm1gt7fj"
+    },
+    {
+      "source": "tU9Uq6iiM",
+      "sourceHandle": "2",
+      "target": "fP76QJ5mT",
+      "targetHandle": null,
+      "id": "We0oj3CKT"
+    },
+    {
+      "source": "HPFVD9RSn",
+      "sourceHandle": "2",
+      "target": "tU9Uq6iiM",
+      "targetHandle": null,
+      "id": "G-xpkA-GW"
+    },
+    {
+      "source": "msU9Umzwu",
+      "sourceHandle": "2",
+      "target": "HPFVD9RSn",
+      "targetHandle": null,
+      "id": "25cIpJg9E"
+    },
+    {
+      "source": "6eZolmJ41",
+      "sourceHandle": "2",
+      "target": "msU9Umzwu",
+      "targetHandle": null,
+      "id": "N5nYgYKLC"
+    },
+    {
+      "source": "msU9Umzwu",
+      "sourceHandle": "1",
+      "target": "m32fDzh-i",
+      "targetHandle": null,
+      "id": "FHXpWV2WO"
+    },
+    {
+      "source": "HPFVD9RSn",
+      "sourceHandle": "1",
+      "target": "7kuZbqItr",
+      "targetHandle": null,
+      "id": "Z27RmnFXV"
+    },
+    {
+      "source": "tU9Uq6iiM",
+      "sourceHandle": "1",
+      "target": "C6nHbFT6U",
+      "targetHandle": null,
+      "id": "nOqCLMZVm"
+    },
+    {
+      "source": "fP76QJ5mT",
+      "sourceHandle": "1",
+      "target": "b11cNXJ6N",
+      "targetHandle": null,
+      "id": "41n9XtFPk"
+    },
+    {
+      "source": "BiPlhKExH",
+      "sourceHandle": "1",
+      "target": "pCeNNwr0f",
+      "targetHandle": null,
+      "id": "KkGDtngcc"
+    },
+    {
+      "source": "pCeNNwr0f",
+      "sourceHandle": "2",
+      "target": "jTGniR-s4",
+      "targetHandle": null,
+      "id": "rJQha0i_P"
+    },
+    {
+      "source": "jTGniR-s4",
+      "sourceHandle": "2",
+      "target": "2Od9D17mk",
+      "targetHandle": null,
+      "id": "dY2JgC0_e"
+    },
+    {
+      "source": "2Od9D17mk",
+      "sourceHandle": "2",
+      "target": "B8NCjuwU_",
+      "targetHandle": null,
+      "id": "vrf8RQXHM"
+    },
+    {
+      "source": "B8NCjuwU_",
+      "sourceHandle": "2",
+      "target": "GnGHsHIG6",
+      "targetHandle": null,
+      "id": "EuRWNqGr6"
+    },
+    {
+      "source": "pCeNNwr0f",
+      "sourceHandle": "1",
+      "target": "papyIwsEe",
+      "targetHandle": null,
+      "id": "wwHLdkMYJ"
+    },
+    {
+      "source": "jTGniR-s4",
+      "sourceHandle": "1",
+      "target": "KREXxLfms",
+      "targetHandle": null,
+      "id": "KpCLiouVX"
+    },
+    {
+      "source": "2Od9D17mk",
+      "sourceHandle": "1",
+      "target": "dwXWzYnXE",
+      "targetHandle": null,
+      "id": "AK0mlieSB"
+    },
+    {
+      "source": "B8NCjuwU_",
+      "sourceHandle": "1",
+      "target": "mxu7eKihQ",
+      "targetHandle": null,
+      "id": "iU4fno5aL"
+    },
+    {
+      "source": "GnGHsHIG6",
+      "sourceHandle": "1",
+      "target": "65MAJdKhq",
+      "targetHandle": null,
+      "id": "gjHhVc_BW"
+    },
+    {
+      "source": "DfdYHkN-h",
+      "sourceHandle": "2",
+      "target": "2ZMXBmRYk",
+      "targetHandle": null,
+      "id": "t_arB6Yxq"
+    },
+    {
+      "source": "2ZMXBmRYk",
+      "sourceHandle": "2",
+      "target": "2WGDLoL10",
+      "targetHandle": null,
+      "id": "ttNbgnB7V"
+    },
+    {
+      "source": "2WGDLoL10",
+      "sourceHandle": "2",
+      "target": "dcT-aQA01",
+      "targetHandle": null,
+      "id": "ksi-1kydv"
+    },
+    {
+      "source": "dcT-aQA01",
+      "sourceHandle": "2",
+      "target": "PZo0Rq7Un",
+      "targetHandle": null,
+      "id": "tvulgebnc"
+    },
+    {
+      "source": "8C0OxWjcR",
+      "sourceHandle": "2",
+      "target": "DfdYHkN-h",
+      "targetHandle": null,
+      "id": "5ooIKCoiy"
+    },
+    {
+      "source": "DfdYHkN-h",
+      "sourceHandle": "1",
+      "target": "VamwsEncC",
+      "targetHandle": null,
+      "id": "0b01qkAYt"
+    },
+    {
+      "source": "2ZMXBmRYk",
+      "sourceHandle": "1",
+      "target": "YXDE0BvT_",
+      "targetHandle": null,
+      "id": "TYQykEAf4"
+    },
+    {
+      "source": "2WGDLoL10",
+      "sourceHandle": "1",
+      "target": "pGa5ylhp_",
+      "targetHandle": null,
+      "id": "896MNyxZO"
+    },
+    {
+      "source": "dcT-aQA01",
+      "sourceHandle": "1",
+      "target": "emc1x3a8s",
+      "targetHandle": null,
+      "id": "AhERbR6Fn"
+    },
+    {
+      "source": "PZo0Rq7Un",
+      "sourceHandle": "1",
+      "target": "iZuCFsZ2C",
+      "targetHandle": null,
+      "id": "x28-UeY5L"
+    },
+    {
+      "source": "jiYcUez-u",
+      "sourceHandle": "2",
+      "target": "BoWsXdPzG",
+      "targetHandle": null,
+      "id": "OMTwkFk23"
+    },
+    {
+      "source": "bpWH7u3BU",
+      "sourceHandle": "2",
+      "target": "RUU8swcZT",
+      "targetHandle": null,
+      "id": "i2J8VAtrq"
+    },
+    {
+      "source": "U0mS3iqkP",
+      "sourceHandle": "2",
+      "target": "OX-nIejxM",
+      "targetHandle": null,
+      "id": "gINyvRar1"
+    },
+    {
+      "source": "gs0oI5hEd",
+      "sourceHandle": "2",
+      "target": "og-ICW2nq",
+      "targetHandle": null,
+      "id": "qAfDKUzNb"
+    },
+    {
+      "source": "prQ9ImHnB",
+      "sourceHandle": "2",
+      "target": "qyuFng5xG",
+      "targetHandle": null,
+      "id": "AMSgo_61L"
+    },
+    {
+      "source": "fP76QJ5mT",
+      "sourceHandle": "2",
+      "target": "Q4R4k6Kob",
+      "targetHandle": null,
+      "id": "9qDgXixoe"
+    },
+    {
+      "source": "GnGHsHIG6",
+      "sourceHandle": "2",
+      "target": "OVpVT6LYu",
+      "targetHandle": null,
+      "id": "eCoJqGEO2"
+    },
+    {
+      "source": "PZo0Rq7Un",
+      "sourceHandle": "2",
+      "target": "mYKG89mHh",
+      "targetHandle": null,
+      "id": "ksJl-9tJr"
     }
   ]
 }
