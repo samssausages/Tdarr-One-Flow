@@ -170,7 +170,7 @@ bitrate_audio_cutoff 384k # will not encode source audio under this bitrate.  Th
 
 Q: It was working but now it isn't.  The Variables aren't working anymore, but I do have them configured.  Log has message:  "Variable of value does not match condition == "
 
-A: Sometimes a Tdarr update can break the existing Variables that you configured in the Library.  When this happens you need to re-save them to update the database.  You could delete them and re-add them, but the easiest way I have found so is to simply add a space, " ", after the variable, then clicking off it to save it.  Then click back on the variable and delete the space.  This will re-save the variables to the database and should correct the issue. 
+A: Sometimes a Tdarr update can break the existing Variables that you configured in the Library.  When this happens you need to re-save them to update the database.  You could delete them and re-add them, but the easiest way I have found is to simply add a space, " ", after the variable, then click another variable and it will save it.  After adding spaces to everything, go back and click on the variables and delete the spaces.  This will re-save the variables to the database and should correct the issue. 
 
 Q:  Why is my video not encoding?  Why is it just copying the video?
 
