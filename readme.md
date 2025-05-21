@@ -168,6 +168,10 @@ bitrate_audio_cutoff 384k # will not encode source audio under this bitrate.  Th
 
 ## FAQ
 
+Q: It was working but now it isn't.  The Variables aren't working anymore, but I do have them configured.  Log has message:  "Variable of value does not match condition == "
+
+A: Sometimes a Tdarr update can break the existing Variables that you configured in the Library.  When this happens you need to re-save them to update the database.  You could delete them and re-add them, but the easiest way I have found so is to simply add a space, " ", after the variable, then clicking off it to save it.  Then click back on the variable and delete the space.  This will re-save the variables to the database and should correct the issue. 
+
 Q:  Why is my video not encoding?  Why is it just copying the video?
 
 A:  The most common reason for this is that your desired Output Bitrate is higher (or close to) your Input bitrate.  It wouldn't make sense to encode a 4000k video to 6000k.  When we encounter this we do go to the fallback cq encoding method, but this also checks to make sure a reasonable size savings can be obtained.  You can lower the quality by raising the cq value.
