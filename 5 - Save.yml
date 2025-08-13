@@ -81,48 +81,48 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.error_too_small}}}",
+        "value": "true"
+      },
       "id": "VfgJdUHHI",
       "position": {
         "x": 1661.3992283374662,
         "y": 1539.0271476751702
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.error_too_small}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Check Variable - error_duration 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.error_duration}}}",
+        "value": "true"
+      },
       "id": "cs95FXJ6K",
       "position": {
         "x": 1563.9375059734464,
         "y": 1452.261045773059
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.error_duration}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Set Flow Variable error_too_small 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "error_too_small",
+        "value": "true"
+      },
       "id": "iqAYaGbH5",
       "position": {
         "x": 1051.3326381902598,
         "y": 944.3291235164467
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "error_too_small",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Duration is too long! Review! 🚨",
@@ -165,16 +165,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.audio_review}}}",
+        "value": "true"
+      },
       "id": "78CtQZMV7",
       "position": {
         "x": 1468.0176931946053,
         "y": 1368.4455502158887
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.audio_review}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ test_mode keeps the original file so you can keep testing.  It's a library variable",
@@ -229,16 +229,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.test_mode}}}",
+        "value": "true"
+      },
       "id": "u5QtDQOjl",
       "position": {
         "x": 793.0247040215469,
         "y": 2149.7818325366784
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.userVariables.library.test_mode}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Had to force timescale - Review ⚠️",
@@ -257,16 +257,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.force_timescale}}}",
+        "value": "true"
+      },
       "id": "HcYL5jc8o",
       "position": {
         "x": 1377.0813821504457,
         "y": 1284.508973394215
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.force_timescale}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "🎆🎆🎆 DONE! 🎆🎆🎆",
@@ -405,16 +405,16 @@
       "sourceRepo": "Community",
       "pluginName": "moveToDirectory",
       "version": "2.0.0",
+      "inputsDB": {
+        "keepRelativePath": "true",
+        "outputDirectory": "{{{args.userVariables.library.output_dir_done}}}"
+      },
       "id": "nSj2dyRzi",
       "position": {
         "x": 1708.79024633776,
         "y": 1625.789840078566
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "keepRelativePath": "true",
-        "outputDirectory": "{{{args.userVariables.library.output_dir_done}}}"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - File is too low bitrate to encode video ℹ️ℹ️ℹ️",
@@ -505,15 +505,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkFileExtension",
       "version": "1.0.0",
+      "inputsDB": {
+        "extensions": "mkv"
+      },
       "id": "CXtJf1P-D",
       "position": {
         "x": 873.7070285686424,
         "y": 91.42750102101502
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "extensions": "mkv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Run MKVPropEdit ⏳",
@@ -544,32 +544,32 @@
       "sourceRepo": "Community",
       "pluginName": "compareFileDurationRatio",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.user.fl_min_duration_limit}}}",
+        "lessThan": "{{{args.variables.user.fl_max_duration_limit}}}"
+      },
       "id": "NsPaSlbgC",
       "position": {
         "x": 898.394104579493,
         "y": 495.40926538401106
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.user.fl_min_duration_limit}}}",
-        "lessThan": "{{{args.variables.user.fl_max_duration_limit}}}"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Compare File Size Ratio ⏳",
       "sourceRepo": "Community",
       "pluginName": "compareFileSizeRatio",
       "version": "2.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.user.fl_min_size_limit}}}",
+        "lessThan": "{{{args.variables.user.fl_max_size_limit}}}"
+      },
       "id": "uQtHoPm5n",
       "position": {
         "x": 861.298494075597,
         "y": 755.3894638866394
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.user.fl_min_size_limit}}}",
-        "lessThan": "{{{args.variables.user.fl_max_size_limit}}}"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Run Health Check ⏳",
@@ -588,63 +588,63 @@
       "sourceRepo": "Community",
       "pluginName": "runClassicTranscodePlugin",
       "version": "2.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_z80t_keep_original_date"
+      },
       "id": "55e9r2oAv",
       "position": {
         "x": 665.3643482042935,
         "y": 1035.6566348059243
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "pluginSourceId": "Community:Tdarr_Plugin_z80t_keep_original_date"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Check Variable - low_bitrate_skip 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.low_bitrate_skip}}}",
+        "value": "true"
+      },
       "id": "Xzzidp1G7",
       "position": {
         "x": 784.4387498373675,
         "y": 1947.695593919422
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.low_bitrate_skip}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "File Save - Move To Review Directory ⏳",
       "sourceRepo": "Community",
       "pluginName": "moveToDirectory",
       "version": "2.0.0",
+      "inputsDB": {
+        "keepRelativePath": "true",
+        "outputDirectory": "{{{args.userVariables.library.output_dir_review}}}"
+      },
       "id": "ZOw6a-NGX",
       "position": {
         "x": 1301.31260152972,
         "y": 1671.2283978477408
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "keepRelativePath": "true",
-        "outputDirectory": "{{{args.userVariables.library.output_dir_review}}}"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Delete Original File & Empty Folder ⏳",
       "sourceRepo": "Community",
       "pluginName": "deleteFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileToDelete": "originalFile",
+        "deleteParentFolderIfEmpty": "true"
+      },
       "id": "ff-SxMjZl",
       "position": {
         "x": 885.692211201201,
         "y": 2247.584034882886
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileToDelete": "originalFile",
-        "deleteParentFolderIfEmpty": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Can't Move File Fail! 🚨🚨",
@@ -711,16 +711,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "error_duration",
+        "value": "true"
+      },
       "id": "qcSGtav7m",
       "position": {
         "x": 1194.0619052004968,
         "y": 669.4176454609469
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "error_duration",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Save File - Require Review! Original Files not Deleted until you accept ⚠️",
