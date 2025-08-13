@@ -192,6 +192,14 @@ The flow is huge, but here is an example.
 
 Changelog:
 
+V0.94
+
+Not too many front end changes this relase, much is to prepare for future features.  Also squashed a few bugs.
+
+ - Fixed bug that resulted in wrong bitrate during certain cirumstances
+ - Backend changes to prepare for future features
+ - Added better notifications for when encoding is skipped due to incompatible HDR
+
 V0.93
 
 BREAKING CHANGES:
