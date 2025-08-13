@@ -5,772 +5,828 @@
   "tags": "",
   "flowPlugins": [
     {
+      "name": "Video - Encode 4k_hdr DISABLED DOESNT WORK ON ALL HDR PROFILES  ⚠️⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "zb7zglFGn",
+      "position": {
+        "x": 2035.26253773126,
+        "y": -549.3696434234222
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Check is_hdr 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.is_hdr}}}",
+        "value": "true"
+      },
+      "id": "40ui-45u1",
+      "position": {
+        "x": 2061.754641809283,
+        "y": -624.9708634976564
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Go to Done ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
+      "id": "vez7zjJN2",
+      "position": {
+        "x": 1234.9912628347954,
+        "y": -735.4891241572386
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Encode 4k_hdr DISABLED DOESNT WORK ON ALL HDR PROFILES  ⚠️⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "bdvLPFMyY",
+      "position": {
+        "x": 1235.1625119181983,
+        "y": -858.9754716527511
+      },
+      "fpEnabled": true
+    },
+    {
       "name": "Video - Go to Autodetect Hardware cq ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "VamwsEncC"
+      },
       "id": "mYKG89mHh",
       "position": {
         "x": 2833.182199691531,
         "y": 51.25059179148661
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "VamwsEncC"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 4k ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "papyIwsEe"
+      },
       "id": "OVpVT6LYu",
       "position": {
         "x": 1849.0814452747893,
         "y": -125.86784404384422
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "papyIwsEe"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 4k_hdr ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "Kp-fkWEmP"
+      },
       "id": "Q4R4k6Kob",
       "position": {
         "x": 1260.8118495348606,
         "y": -110.91775621468862
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "Kp-fkWEmP"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 1440p ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "NlmEriOJi"
+      },
       "id": "qyuFng5xG",
       "position": {
         "x": 665.8740639363833,
         "y": -134.93849434852928
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "NlmEriOJi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 480p ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "-_UvUco4A"
+      },
       "id": "og-ICW2nq",
       "position": {
         "x": -1758.4294998611797,
         "y": -90.87449998590128
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "-_UvUco4A"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 576p ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "w3dN6Zauq"
+      },
       "id": "OX-nIejxM",
       "position": {
         "x": -1157.4292345449642,
         "y": -106.01301895616216
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "w3dN6Zauq"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 720p ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "qjujiEGIL"
+      },
       "id": "RUU8swcZT",
       "position": {
         "x": -527.6303544650511,
         "y": -118.87796307665744
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "qjujiEGIL"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Autodetect Hardware 1080p ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "hjmMipWk5"
+      },
       "id": "BoWsXdPzG",
       "position": {
         "x": 76.40134398418519,
         "y": -116.58574153204871
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "hjmMipWk5"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "PZo0Rq7Un",
       "position": {
         "x": 2776.120202648247,
         "y": -72.45172267165051
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "dcT-aQA01",
       "position": {
         "x": 2683.3641973612034,
         "y": -178.41831777155755
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "2WGDLoL10",
       "position": {
         "x": 2604.9490072712483,
         "y": -280.4706992696123
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "2ZMXBmRYk",
       "position": {
         "x": 2529.2661560132706,
         "y": -386.0606764360084
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "DfdYHkN-h",
       "position": {
         "x": 2448.217443449575,
         "y": -487.8256869939341
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "GnGHsHIG6",
       "position": {
         "x": 1824.7819342232378,
         "y": -307.9195954724038
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "B8NCjuwU_",
       "position": {
         "x": 1738.4725356957476,
         "y": -412.0641680404659
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "2Od9D17mk",
       "position": {
         "x": 1648.2806489855689,
         "y": -516.1521450321516
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "jTGniR-s4",
       "position": {
         "x": 1556.9149550504412,
         "y": -619.9783581161447
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "pCeNNwr0f",
       "position": {
         "x": 1443.554378155244,
         "y": -714.4354282960331
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "fP76QJ5mT",
       "position": {
         "x": 1234.445531615871,
         "y": -285.10548484471923
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "tU9Uq6iiM",
       "position": {
         "x": 1141.4180057669284,
         "y": -388.3410114768697
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "HPFVD9RSn",
       "position": {
         "x": 1056.2644208292202,
         "y": -482.58368776091237
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "msU9Umzwu",
       "position": {
         "x": 980.4995417757384,
         "y": -587.556680081388
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "6eZolmJ41",
       "position": {
         "x": 895.2865629839591,
         "y": -697.4443652238959
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "prQ9ImHnB",
       "position": {
         "x": 642.5528759963098,
         "y": -288.67833892114714
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "yEMzF4V8R",
       "position": {
         "x": 561.8554400080369,
         "y": -392.35074189486033
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "-E2NVcgHu",
       "position": {
         "x": 474.3491022538483,
         "y": -495.3118563496845
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "VJDakuVmY",
       "position": {
         "x": 380.3155939089675,
         "y": -598.9450283914997
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "071XBKlJA",
       "position": {
         "x": 292.18673864227065,
         "y": -700.444365223896
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "jiYcUez-u",
       "position": {
         "x": 51.55287599631009,
         "y": -291.6783389211472
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "x_xEA_Vd8",
       "position": {
         "x": -33.144559991963035,
         "y": -392.35074189486033
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "tL43A623_",
       "position": {
         "x": -119.65089774615154,
         "y": -496.31185634968455
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "pFU_l9J4D",
       "position": {
         "x": -207.6844060910322,
         "y": -601.9450283914997
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "nktrbv06G",
       "position": {
         "x": -307.8132613577291,
         "y": -700.444365223896
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "bpWH7u3BU",
       "position": {
         "x": -553.9288874679795,
         "y": -297.02305824836355
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "F3DOic_ES",
       "position": {
         "x": -638.3554570376441,
         "y": -399.2670694277897
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "uC50uBfGM",
       "position": {
         "x": -706.0922844513599,
         "y": -499.03275655729266
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "1U4V0YmLi",
       "position": {
         "x": -807.7977070170921,
         "y": -598.2989483185495
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "B2BYltG4f",
       "position": {
         "x": -896.2388574539339,
         "y": -704.5534745774144
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "U0mS3iqkP",
       "position": {
         "x": -1183.496471098195,
         "y": -262.81542947114576
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "3xA7GTCEI",
       "position": {
         "x": -1268.00056481837,
         "y": -370.5854220748357
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "yq1ezkZ_q",
       "position": {
         "x": -1347.644437946988,
         "y": -471.9254583818373
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "TTRRz69gd",
       "position": {
         "x": -1442.812176657253,
         "y": -570.501154265341
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "lHztZIs05",
       "position": {
         "x": -1512.2302554175067,
         "y": -666.7579396202232
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "gs0oI5hEd",
       "position": {
         "x": -1784.819060775741,
         "y": -235.1722788690082
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "25p45rk-V",
       "position": {
         "x": -1880.7156004731796,
         "y": -337.48268808205523
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "Tx_nwHPgi",
       "position": {
         "x": -1980.6773145542816,
         "y": -443.6796146916296
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "O9Icx0xTs",
       "position": {
         "x": -2061.0973131965907,
         "y": -541.3185536903912
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "VZz-AhqVE",
       "position": {
         "x": -2100.6492347269213,
         "y": -651.3597193052378
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - No encoder manually defined, attempting autodetect ⚠️",
@@ -801,80 +857,80 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "vaapi"
+      },
       "id": "-osAHJecO",
       "position": {
         "x": 1655.9578839614865,
         "y": -2528.4470925884243
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "amf"
+      },
       "id": "z_isysCp0",
       "position": {
         "x": 1517.9961698803847,
         "y": -2630.6440191979987
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder cpu 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "cpu"
+      },
       "id": "TMJnfaqwH",
       "position": {
         "x": 1771.8544236589253,
         "y": -2445.1366833753773
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "cpu"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "qsv"
+      },
       "id": "32CrEuf2a",
       "position": {
         "x": 1416.1844967496315,
         "y": -2748.483474562224
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check encoder nvenc🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.encoder}}}",
+        "value": "nvenc"
+      },
       "id": "2YrneglXQ",
       "position": {
         "x": 1313.673085272718,
         "y": -2858.298812751461
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.encoder}}}",
-        "value": "nvenc"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Hardware Check done ℹ️",
@@ -893,32 +949,32 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "K_Z-TiFwk"
+      },
       "id": "DPb4Nvv-V",
       "position": {
         "x": 1048.7105274521452,
         "y": -1228.9436737381236
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "K_Z-TiFwk"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check if disable_vbr🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.disable_vbr}}}",
+        "value": "true"
+      },
       "id": "7cKHQFNya",
       "position": {
         "x": 1192.1389519456854,
         "y": -1324.6821028965005
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.disable_vbr}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ CPU Encoder",
@@ -951,8 +1007,8 @@
       "version": "1.0.0",
       "id": "A4dgfQZ9K",
       "position": {
-        "x": 2347.3250892574038,
-        "y": -1009.711616941841
+        "x": 2348.082947540659,
+        "y": -1039.2680899887937
       },
       "fpEnabled": true
     },
@@ -973,33 +1029,33 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
       "id": "JvxGMuVXd",
       "position": {
         "x": 1202.5941948434072,
         "y": -3848.8805520237056
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "CX0eeir2X"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check if disable_video 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.disable_video}}}",
+        "value": "true",
+        "condition": "=="
+      },
       "id": "80p25LVgi",
       "position": {
         "x": 1384.184858283137,
         "y": -4025.9667794875677
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.disable_video}}}",
-        "value": "true",
-        "condition": "=="
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - is not hevc ℹ️",
@@ -1042,16 +1098,16 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
       "id": "Muq2K7p8b",
       "position": {
         "x": 1319.2991041760754,
         "y": -3508.324595708025
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "CX0eeir2X"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - process hevc disabled ℹ️",
@@ -1070,16 +1126,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.do_hevc}}}",
+        "value": "true"
+      },
       "id": "Ptb_fuRE1",
       "position": {
         "x": 1224.7529686952137,
         "y": -3681.383585292938
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.do_hevc}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - crf hevc_cpu 📼",
@@ -1182,45 +1238,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "emc1x3a8s",
       "position": {
         "x": 2612.2372824040986,
         "y": -87.54068065721104
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "pGa5ylhp_",
       "position": {
         "x": 2534.82018313667,
         "y": -191.31060726875893
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "YXDE0BvT_",
       "position": {
         "x": 2455.3596249862107,
         "y": -294.03355433438094
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -1275,16 +1331,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.do_deinterlace}}}",
+        "value": "true"
+      },
       "id": "4R6zCBQDN",
       "position": {
         "x": 224.23260197160994,
         "y": 1383.5416520590175
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.do_deinterlace}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ This Deinterlaces .ts (TV Broadcasts)",
@@ -1336,22 +1392,22 @@
         "x": 1611.525498840588,
         "y": -215.71391885174666
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "mxu7eKihQ",
       "position": {
         "x": 1674.207815492192,
         "y": -321.9539658846846
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 4k hevc_amf 📼",
@@ -1367,22 +1423,22 @@
         "x": 1522.0870450465534,
         "y": -323.2754699342122
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "dwXWzYnXE",
       "position": {
         "x": 1589.2027470910416,
         "y": -426.3863275789077
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 4k hevc_qsv 📼",
@@ -1421,15 +1477,15 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "KREXxLfms",
       "position": {
         "x": 1499.4806633304888,
         "y": -530.9772435977047
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -1478,8 +1534,8 @@
       "version": "1.0.0",
       "id": "SuTWlsKmi",
       "position": {
-        "x": 1348.167510883761,
-        "y": 137.81780463149823
+        "x": 1349.9086120103534,
+        "y": 140.42945632138662
       },
       "fpEnabled": true
     },
@@ -1537,7 +1593,7 @@
         "x": 1031.3602057932492,
         "y": -197.8109749146493
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 4k_hdr hevc_amf 📼",
@@ -1553,22 +1609,22 @@
         "x": 934.0867969295489,
         "y": -300.1492226173381
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "C6nHbFT6U",
       "position": {
         "x": 1085.3370168118913,
         "y": -299.6982691311066
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 4k_hdr hevc_qsv 📼",
@@ -1591,30 +1647,30 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "7kuZbqItr",
       "position": {
         "x": 994.967536682715,
         "y": -399.9130871450584
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "m32fDzh-i",
       "position": {
         "x": 906.1969445176492,
         "y": -496.90082229483005
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -1694,7 +1750,7 @@
         "x": 423.0075770352713,
         "y": -201.57128876021855
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 1440p hevc_amf 📼",
@@ -1710,7 +1766,7 @@
         "x": 342.4396738045324,
         "y": -304.7800870262035
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 1440p hevc_nvenc 📼",
@@ -1777,45 +1833,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "Vj62TSSLG",
       "position": {
         "x": 494.52484875653965,
         "y": -303.4585829766758
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "bSpeYKrFJ",
       "position": {
         "x": 409.4336900248535,
         "y": -406.34826716414995
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "QvhsqHzcq",
       "position": {
         "x": 318.4459299663847,
         "y": -508.7415335943375
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -1887,7 +1943,7 @@
         "x": -251.08822653578144,
         "y": -303.6572899461634
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 1080p hevc_vaapi 📼",
@@ -1903,7 +1959,7 @@
         "x": -164.04845458082832,
         "y": -196.53393603922254
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - This Encoder is not available yet, if you have a good ffmpeg command share it so we can add it! ⚠️⚠️",
@@ -1950,45 +2006,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "GH5BYuxMu",
       "position": {
         "x": -99.47480115661514,
         "y": -303.8367159097153
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "4jgRJ0JLM",
       "position": {
         "x": -184.09421031546034,
         "y": -407.7076723372944
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "n1226Hr4v",
       "position": {
         "x": -276.08177242967304,
         "y": -510.6171323033172
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -2068,7 +2124,7 @@
         "x": -780.7533061484435,
         "y": -207.47319800082744
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 720p hevc_amf 📼",
@@ -2084,7 +2140,7 @@
         "x": -865.1149241269953,
         "y": -313.70588436561377
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 720p hevc_qsv 📼",
@@ -2123,45 +2179,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "JYur9jq4C",
       "position": {
         "x": -710.9799231609886,
         "y": -314.0173621045727
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "f3jgPL7fV",
       "position": {
         "x": -790.8193008429042,
         "y": -412.43239068923185
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "9WRT75lrG",
       "position": {
         "x": -880.437623767787,
         "y": -511.069719265644
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -2229,7 +2285,7 @@
         "x": -1406.06598000445,
         "y": -167.40010328793645
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 576p hevc_amf 📼",
@@ -2245,7 +2301,7 @@
         "x": -1495.1800621616717,
         "y": -276.34764952440514
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 576phevc_qsv 📼",
@@ -2284,45 +2340,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "83HJLRooM",
       "position": {
         "x": -1341.3675064312802,
         "y": -276.58937420946904
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "5JLcJ7l1d",
       "position": {
         "x": -1425.1989616861315,
         "y": -383.1392976880454
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "JW_PEQBTw",
       "position": {
         "x": -1508.6248024601027,
         "y": -486.335147040092
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -2414,7 +2470,7 @@
         "x": -2016.2996099139516,
         "y": -149.44596539118172
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 480p hevc_amf 📼",
@@ -2430,7 +2486,7 @@
         "x": -2123.0753567692186,
         "y": -247.08498121272734
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 480p hevc_qsv 📼",
@@ -2453,45 +2509,45 @@
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "9dDHjQVAQ",
       "position": {
         "x": -1948.315304909339,
         "y": -248.3926840146448
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "L3SWrc-wc",
       "position": {
         "x": -2050.3284345322168,
         "y": -352.40919469321113
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "MxcIeEjnJ",
       "position": {
         "x": -2143.295368934502,
         "y": -456.18072670853826
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_nvenc 🔍",
@@ -2571,7 +2627,7 @@
         "x": 1543.8716123474392,
         "y": -1813.1750186571958
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - Encoder Type hevc_amf 📼",
@@ -2587,52 +2643,52 @@
         "x": 1433.0775016694834,
         "y": -1907.0529089900897
       },
-      "fpEnabled": false
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_vaapi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_vaapi"
+      },
       "id": "DmdzAJSI3",
       "position": {
         "x": 1629.6791279941763,
         "y": -1914.350530932551
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_vaapi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_amf 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_amf"
+      },
       "id": "uXG7N31s1",
       "position": {
         "x": 1490.2036656294888,
         "y": -2019.7515120036087
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_amf"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check Node Hardware Encoder hevc_qsv 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkNodeHardwareEncoder",
       "version": "1.0.0",
+      "inputsDB": {
+        "hardwareEncoder": "hevc_qsv"
+      },
       "id": "Td-fbBEUD",
       "position": {
         "x": 1390.4665105419267,
         "y": -2131.8244987336707
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "hardwareEncoder": "hevc_qsv"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - Encoder Type hevc_qsv 📼",
@@ -2703,16 +2759,16 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.disable_cq}}}",
+        "value": "true"
+      },
       "id": "8C0OxWjcR",
       "position": {
         "x": 2348.1970518886533,
         "y": -573.7744582456926
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.disable_cq}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - General ffmpeg command 📼",
@@ -2747,7 +2803,7 @@
       "fpEnabled": true
     },
     {
-      "name": "Video - Encoding - Other Error ⚠️",
+      "name": "Video - Encoding - No - Other Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -2787,112 +2843,112 @@
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.is_hdr}}}",
+        "value": "true"
+      },
       "id": "h_GgZQ6qp",
       "position": {
         "x": 359.76106593662183,
         "y": 599.3497917056494
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.is_hdr}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "wTcfjtaKa",
       "position": {
         "x": -1938.2508833898264,
         "y": -650.8988230693204
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "d87C98I6u",
       "position": {
         "x": -1300.6822397943633,
         "y": -660.7852962841137
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "KfxaRRZkO",
       "position": {
         "x": -740.8688806469785,
         "y": -703.7018584468719
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "0up0YyNt9",
       "position": {
         "x": -146.60168312277662,
         "y": -700.3430335061923
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "AmmXKXPQP",
       "position": {
         "x": 461.73154437579535,
         "y": -703.4762197269717
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "8M4zDA1Eo",
       "position": {
         "x": 1606.0846328666476,
         "y": -718.1095603778331
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Non Standard Resolution, using cq ℹ️",
@@ -2963,182 +3019,182 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
       "id": "v7GE61W1p",
       "position": {
         "x": 581.7033190675588,
         "y": 2270.0907352427976
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "CX0eeir2X"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode cq Set low_bitrate_skip 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "low_bitrate_skip",
+        "value": "true"
+      },
       "id": "K-phc5d3Z",
       "position": {
         "x": 582.0410969143506,
         "y": 2183.027032711432
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "low_bitrate_skip",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to cp Encoding Method ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "FPltMUSm7"
+      },
       "id": "7xTim8Qvt",
       "position": {
         "x": 1059.8241361338567,
         "y": -695.7008888466294
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "FPltMUSm7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Go to Done ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
       "id": "UveiLLkBS",
       "position": {
         "x": 2219.081968744743,
         "y": -415.61743436762106
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "CX0eeir2X"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 4k_hdr 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_4k_hdr}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "6FN1FFcbH",
       "position": {
         "x": 921.3217841738785,
         "y": -779.4268991779472
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_4k_hdr}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "VIdeo - Check is_ts 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.user.is_ts}}}",
+        "value": "true"
+      },
       "id": "B5BTZJ679",
       "position": {
         "x": 385.00804102486154,
         "y": 1221.7302508571424
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.user.is_ts}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 4k 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_4k}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "BiPlhKExH",
       "position": {
         "x": 1521.0376433224708,
         "y": -801.2319496725314
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_4k}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 1440p 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_1440p}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "cV5-LAnLV",
       "position": {
         "x": 353.00503056901016,
         "y": -788.2855667464739
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_1440p}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 1080p 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_1080p}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "ooUXmcK1T",
       "position": {
         "x": -236.24145041406734,
         "y": -784.2015510876938
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_1080p}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 720p 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_720p}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "YjQXZRWjC",
       "position": {
         "x": -808.5538145785647,
         "y": -791.0796366625375
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_720p}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Check Bitrate 576p 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_576p}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "zGeOEYjqk",
       "position": {
         "x": -1325.1196727652537,
         "y": -749.8513797394144
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_576p}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encode Main Arg - 480p hevc_nvenc 📼",
@@ -3281,49 +3337,49 @@
       "sourceRepo": "Community",
       "pluginName": "checkVideoBitrate",
       "version": "1.0.0",
+      "inputsDB": {
+        "greaterThan": "{{{args.variables.cutoff_480p}}}",
+        "lessThan": "99999999999999",
+        "unit": "bps"
+      },
       "id": "gAHMD-XEk",
       "position": {
         "x": -1963.201594437557,
         "y": -749.6878857393567
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "greaterThan": "{{{args.variables.cutoff_480p}}}",
-        "lessThan": "99999999999999",
-        "unit": "bps"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Compare File Size Ratio Live 🔍",
       "sourceRepo": "Community",
       "pluginName": "compareFileSizeRatioLive",
       "version": "1.0.0",
+      "inputsDB": {
+        "checkDelaySeconds": "{{{args.variables.user.fl_cq_filesize_ratio_time}}}",
+        "thresholdPerc": "{{{args.variables.user.fl_cq_filesize_ratio}}}"
+      },
       "id": "zS_dE8Dx2",
       "position": {
         "x": 1290.5066805834424,
         "y": -3068.2966640608415
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "checkDelaySeconds": "{{{args.variables.user.fl_cq_filesize_ratio_time}}}",
-        "thresholdPerc": "{{{args.variables.user.fl_cq_filesize_ratio}}}"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Encoding cq - Check if Live Size Error 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.liveSizeCompare.error}}}",
+        "value": "true"
+      },
       "id": "D2qmEhInP",
       "position": {
         "x": 645.95899781152,
         "y": 2005.0012919193957
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.liveSizeCompare.error}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check if hevc 🔍",
@@ -3342,15 +3398,15 @@
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-vf bwdif=1:0:1"
+      },
       "id": "ua0Y1mByE",
       "position": {
         "x": 142.01698160445625,
         "y": 1507.4089130462864
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "outputArguments": "-vf bwdif=1:0:1"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Start 🚀",
@@ -3369,16 +3425,16 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "CX0eeir2X"
+      },
       "id": "NAQG8aB_i",
       "position": {
         "x": 1011.029510662544,
         "y": -3169.250246115131
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "px3PqFxVL",
-        "pluginId": "CX0eeir2X"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Filter type of video ℹ️",
@@ -3411,8 +3467,8 @@
       "version": "1.0.0",
       "id": "K_Z-TiFwk",
       "position": {
-        "x": 2347.1699529592565,
-        "y": -666.6580452751791
+        "x": 2347.927811242512,
+        "y": -678.7837778072624
       },
       "fpEnabled": true
     },
@@ -3421,62 +3477,62 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "25kSD__gW",
+        "pluginId": "KM3GG8qTW"
+      },
       "id": "MDD_GBBGX",
       "position": {
         "x": 409.4140241666463,
         "y": 2120.228338614647
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "25kSD__gW",
-        "pluginId": "KM3GG8qTW"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - JS Function to calc bitrates 🧮",
       "sourceRepo": "Community",
       "pluginName": "customFunction",
       "version": "1.0.0",
+      "inputsDB": {
+        "code": "module.exports = async (args) => {\n\n  // debug: dump MediaInfo to logs\n  console.error('mediaInfo dump:', JSON.stringify(args.inputFileObj.mediaInfo, null, 2));\n\n  const bitrates = {\n    \"480p\": parseInt(args.userVariables.library.bitrate_480p),\n    \"576p\": parseInt(args.userVariables.library.bitrate_576p),\n    \"720p\": parseInt(args.userVariables.library.bitrate_720p),\n    \"1080p\": parseInt(args.userVariables.library.bitrate_1080p),\n    \"1440p\": parseInt(args.userVariables.library.bitrate_1440p),\n    \"4k\": parseInt(args.userVariables.library.bitrate_4k),\n    \"4k_hdr\": parseInt(args.userVariables.library.bitrate_4k_hdr),\n  };\n\n  // Check if all bitrates are valid\n  for (let resolution in bitrates) {\n    if (isNaN(bitrates[resolution]) || bitrates[resolution] <= 0) {\n      throw new Error(`Invalid bitrate_${resolution} value. Please ensure it is a positive integer.`);\n    }\n  }\n\n  let variables = args.variables || {}; // Preserve existing variables/tags\n\n  for (let resolution in bitrates) {\n    const bitrate = bitrates[resolution];\n    const maxrate = bitrate * 2; // Maxrate is double the bitrate\n    const bufsize = maxrate * 2; // Bufsize is double the maxrate\n    const cutoff = Math.round(bitrate * 1.15 * 1000); // Cutoff is 115% of the bitrate, rounded to nearest integer. In bps, not kbs\n    \n    // Store in variables\n    variables[`bitrate_${resolution}`] = `${bitrate}k`;\n    variables[`maxrate_${resolution}`] = `${maxrate}k`;\n    variables[`bufsize_${resolution}`] = `${bufsize}k`;\n    variables[`cutoff_${resolution}`] = `${cutoff}`;  // In bps\n  }\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: variables,\n  };\n};\n"
+      },
       "id": "mZGhkFE_A",
       "position": {
         "x": 1297.5148372126057,
         "y": -3258.473766101014
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "code": "module.exports = async (args) => {\n  const bitrates = {\n    \"480p\": parseInt(args.userVariables.library.bitrate_480p),\n    \"576p\": parseInt(args.userVariables.library.bitrate_576p),\n    \"720p\": parseInt(args.userVariables.library.bitrate_720p),\n    \"1080p\": parseInt(args.userVariables.library.bitrate_1080p),\n    \"1440p\": parseInt(args.userVariables.library.bitrate_1440p),\n    \"4k\": parseInt(args.userVariables.library.bitrate_4k),\n    \"4k_hdr\": parseInt(args.userVariables.library.bitrate_4k_hdr),\n  };\n\n  // Check if all bitrates are valid\n  for (let resolution in bitrates) {\n    if (isNaN(bitrates[resolution]) || bitrates[resolution] <= 0) {\n      throw new Error(`Invalid bitrate_${resolution} value. Please ensure it is a positive integer.`);\n    }\n  }\n\n  let variables = args.variables || {}; // Preserve existing variables/tags\n\n  for (let resolution in bitrates) {\n    const bitrate = bitrates[resolution];\n    const maxrate = bitrate * 2; // Maxrate is double the bitrate\n    const bufsize = maxrate * 2; // Bufsize is double the maxrate\n    const cutoff = Math.round(bitrate * 1.15 * 1000); // Cutoff is 115% of the bitrate, rounded to nearest integer. In bps, not kbs\n    \n    // Store in variables\n    variables[`bitrate_${resolution}`] = `${bitrate}k`;\n    variables[`maxrate_${resolution}`] = `${maxrate}k`;\n    variables[`bufsize_${resolution}`] = `${bufsize}k`;\n    variables[`cutoff_${resolution}`] = `${cutoff}`;  // In bps\n  }\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: variables,\n  };\n};\n"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video Check is_avi 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFileExtension",
       "version": "1.0.0",
+      "inputsDB": {
+        "extensions": "avi"
+      },
       "id": "1eZMD_YUy",
       "position": {
         "x": 1199.534943957258,
         "y": -3346.689619760736
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "extensions": "avi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - Check is_hdr 🔍",
       "sourceRepo": "Community",
       "pluginName": "checkFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "{{{args.variables.is_hdr}}}",
+        "value": "true"
+      },
       "id": "GCZId3cYn",
       "position": {
         "x": 1367.2389252427745,
         "y": -992.6344223818486
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "{{{args.variables.is_hdr}}}",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Video - JS to Calculate Bitrate Failed 🚨🚨",
@@ -3503,7 +3559,7 @@
       "fpEnabled": true
     },
     {
-      "name": "Video - Encoding - Live Size Error ⚠️",
+      "name": "Video - Encoding - Yes - Live Size Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -3700,13 +3756,6 @@
       "id": "se8pA59wc"
     },
     {
-      "source": "GCZId3cYn",
-      "sourceHandle": "1",
-      "target": "jnRtGCtQV",
-      "targetHandle": null,
-      "id": "EsLgHVRvl"
-    },
-    {
       "source": "mZGhkFE_A",
       "sourceHandle": "err1",
       "target": "g-IegzkNa",
@@ -3894,13 +3943,6 @@
       "target": "K_Z-TiFwk",
       "targetHandle": null,
       "id": "RwBZz1BPL"
-    },
-    {
-      "source": "K_Z-TiFwk",
-      "sourceHandle": "1",
-      "target": "8C0OxWjcR",
-      "targetHandle": null,
-      "id": "phwRWvuXc"
     },
     {
       "source": "mZGhkFE_A",
@@ -5910,6 +5952,48 @@
       "target": "mYKG89mHh",
       "targetHandle": null,
       "id": "ksJl-9tJr"
+    },
+    {
+      "source": "GCZId3cYn",
+      "sourceHandle": "1",
+      "target": "bdvLPFMyY",
+      "targetHandle": null,
+      "id": "Eq5BThQEf"
+    },
+    {
+      "source": "bdvLPFMyY",
+      "sourceHandle": "1",
+      "target": "vez7zjJN2",
+      "targetHandle": null,
+      "id": "4f1SUATzp"
+    },
+    {
+      "source": "K_Z-TiFwk",
+      "sourceHandle": "1",
+      "target": "40ui-45u1",
+      "targetHandle": null,
+      "id": "p0nfnJ-kn"
+    },
+    {
+      "source": "40ui-45u1",
+      "sourceHandle": "2",
+      "target": "8C0OxWjcR",
+      "targetHandle": null,
+      "id": "I9dsbgAZ1"
+    },
+    {
+      "source": "40ui-45u1",
+      "sourceHandle": "1",
+      "target": "zb7zglFGn",
+      "targetHandle": null,
+      "id": "617DG0Cj6"
+    },
+    {
+      "source": "zb7zglFGn",
+      "sourceHandle": "1",
+      "target": "UveiLLkBS",
+      "targetHandle": null,
+      "id": "n1RLUyR47"
     }
   ]
 }
