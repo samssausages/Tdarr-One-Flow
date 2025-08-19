@@ -49,6 +49,10 @@ I broke it down into 5 steps/flows:
 3. Create a new Library with the Variables listed below (Make Sure your library has an input folder defined & output folders exist)
 4. Profit
 
+# Known Limitations
+  - Doesn't work for DV HDR content.
+  - .ts files in 720p often end up with an unexpected bitrate.  Have not been able to figure out why yet.
+
 # Tweaks
 - All the configurable Flow Settings can be edited in flow 1 - Input
 - If you have an Nvidia 2000 series or up, enable flow plugin fl_nvenc_b-frames in the 1-Input flow. (1660 Super as well)
