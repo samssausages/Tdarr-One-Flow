@@ -11,7 +11,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "KzVMt3UyQ",
@@ -58,7 +58,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "B52oilSl7",
@@ -105,7 +105,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "DrG63m3Nt",
@@ -146,13 +146,13 @@
       }
     },
     {
-      "name": "Video - Encode Main Arg - 1080p hevc_vaapi 📼",
+      "name": "Video - Encode Main Arg - 1080p hevc_videotoolbox 📼",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "M87yDh-yV",
@@ -230,7 +230,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "MWd2SVbqB",
@@ -302,13 +302,13 @@
       }
     },
     {
-      "name": "Video - Encode Main Arg - 576p hevc_vaapi 📼",
+      "name": "Video - Encode Main Arg - 576p hevc_videotoolbox 📼",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "iqFQp1MFt",
@@ -324,7 +324,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -preset slow"
       },
       "fpEnabled": true,
       "id": "16C7758Yw",
@@ -1823,7 +1823,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "jxU0G0Zzi",
@@ -2009,7 +2009,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} "
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "s27no-NeE",
@@ -2166,7 +2166,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "3DRBvliTU",
@@ -2343,7 +2343,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "L2LEwDt5X",
@@ -2540,7 +2540,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "Ljo5hpC1V",
@@ -2674,8 +2674,8 @@
       "fpEnabled": true,
       "id": "SKZWMFjOt",
       "position": {
-        "x": -1200,
-        "y": -24
+        "x": -1152,
+        "y": 24
       }
     },
     {
@@ -2701,7 +2701,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "WjWg-Jrim",
@@ -2886,7 +2886,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}}"
+        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -quality balanced -rc cbr"
       },
       "fpEnabled": true,
       "id": "V1oGd7yMZ",
