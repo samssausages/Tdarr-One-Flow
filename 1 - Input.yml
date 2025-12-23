@@ -395,7 +395,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "variable": "fl_cpu_main",
-        "value": "\"lookahead=32\""
+        "value": "-x265-params \"rc-lookahead=32\""
       },
       "id": "CfQ5R76K8",
       "position": {

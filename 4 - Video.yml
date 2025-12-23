@@ -2580,7 +2580,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v libx265"
+        "outputArguments": "-c:v libx265 {{fl_cpu_quality}}"
       },
       "id": "J_Pszmry1",
       "position": {
